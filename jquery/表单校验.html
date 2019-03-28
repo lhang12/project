@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+			$(function(){
+				// 动态添加小红点
+				$(".bitian").after("<font class='high'>*</font>")
+				//给必填项绑定事件
+				$(".bitian").blur(function(){
+					// alert(this.value);
+					$(this).parent().find("span").remove();
+					if($(this).is("#usrname")){
+						
+						if(this.value.length<6){
+							$(this).parent().append("<span class='formtips onError'>用户名太少</span>");
+						}else{
+							$(this).parent().append("<span class='formtips onSuccess'>用户名符合</span>");
+						}
+					}
+					if($(this).is("#pswd")){
+						// $(".formtips").remove();
+						if(this.value.length<6){
+							$(this).parent().append("<span class='formtips onError'>密码太少</span>");
+						}else{
+							$(this).parent().append("<span class='formtips onSuccess'>密码符合</span>");
+						}
+					}
+				}).focus(function(){
+					$(this).triggerHandler("blur");
+				}).keyup(function(){
+					$(this).triggerHandler("blur");
+				})
+				// 给表单绑定事件
+				$("form").submit(function(){
+					$(".bitian").trigger("blur");
+					var length = $(".onError").length
+					if(length>0){
+						return false;
+					}
+					return true;
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<form action="" method="">
+			
+		<!-- </form> -->
+			
+			
+			<div>
+				用户名：<input type="text" class="bitian" id="usrname" />
+			</div>
+			<div>
+				密码：<input type="password" class="bitian" id="pswd" />
+			</div>
+			<div>
+				手机号：<input type="number" />
+			</div>
+			<div>
+				<input type="submit" name="" id="" value="提交表单" />
+			</div>
+		</form>
+	</body>
+</html>

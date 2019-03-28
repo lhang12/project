@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.logo{
+				float: left;
+				text-decoration: none;
+				height: 3.75rem;
+				line-height: 3.75rem;
+				width: 33%;
+			}
+			.amenu{
+				color: white;
+				text-decoration: none;
+				height: 3.75rem;
+				line-height: 3.75rem;
+			}
+			.href{
+				text-decoration: none;
+			}
+		</style>
+		<script type="text/javascript">
+			var province = [["---请选择---"],["一环","二环","三环","四环"],["武汉","湘潭","潭州"],["邯郸","邢台","廊坊","保定","雄安新区"]]
+			function huanxian(){
+				// alert("测试")
+ 				var pv = document.getElementById("pro");
+ 				var xian1 = document.getElementById("xian");
+ 				var co = province[pv.value];
+ 				// alert(co[1])
+ 				var node;
+ 				var option;
+				xian1.length=1;
+ 				for(var i = 0;i<co.length;i++){
+					// alert(co[i])
+ 					node = document.createTextNode(co[i]);
+ 					option = document.createElement("option");
+ 					option.appendChild(node);
+ 					xian1.appendChild(option)
+ 				}
+			}
+			function showTips(spanID,msg){
+				var tip1 = document.getElementById(spanID);
+				tip1.innerHTML= msg;
+							}
+			function checkName(spanID,cID,Fmsg,Tmsg){
+				var nameelement = document.getElementById(cID);
+				var value = nameelement.value
+				var tip1 = document.getElementById(spanID);
+				if(value.length<6){
+					
+					tip1.innerHTML=Fmsg;
+					return false;
+				}else{
+					tip1.innerHTML=Tmsg;
+					return true;
+				}
+			}
+			function checkForm(){
+				// var flag = checkName(spanID,cID,Fmsg,Tmsg)&checkpassword()&checkemail();
+				var flag = checkName('tip','usr','<font color =red size =2>用户名小于6</font>','<font color =red size =2>用户名满足要求</font>')&&yzmjg()&&checkpassword()&&checkemail()&&checkName('pwtip','password','<font color =red size =2>密码小于6</font>','<font color =red size =2>密码满足要求</font>');
+//  				alert(checkName('tip','usr','<font color =red size =2>用户名小于6</font>','<font color =red size =2>用户名满足要求</font>'));
+//  				alert(checkpassword());
+//  				alert(checkemail());
+//  				alert(checkName('pwtip','password','<font color =red size =2>密码小于6</font>','<font color =red size =2>密码满足要求</font>'));
+				// alert(flag)
+				return flag;
+			}
+			function checkpassword(){
+ 				var pw  = document.getElementById("password").value;
+ 				var cpw = document.getElementById("cpassword").value;
+// 				alert(pw);
+// 				alert(cpw);
+ 				// alert(pw)
+ 				var cpwtip1 = document.getElementById("cpwtip")
+ 				if(pw==cpw){
+ 					
+ 					cpwtip1.innerHTML="<font color = red size = 2>密码完成</font>";
+					return true;
+ 				}else{
+ 					cpwtip1.innerHTML="<font color = red size = 2>密码不匹配</font>";
+					return false;
+ 				}
+			}
+			function checkemail(){
+				var cemial = document.getElementById("emial");
+				var espan = document.getElementById("espan");
+				if( /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/.test(cemial.value)){
+					espan.innerHTML="<font color = red size = 2>邮箱格式正确</font>";
+					return true;
+				}else{
+					espan.innerHTML="<font color = red size = 2>邮箱格式不正确</font>";
+					return false;
+				}
+			}
+			function init(){
+				var yzmid = document.getElementById("yzmpic");
+				yzmid.src ="../Pic/img/logo2.png";
+			}
+			function yzmjg(){
+				var co = document.getElementById("yzmco");
+				if(co.value=="黑马教程"){
+					return true;
+					
+			}else{
+				return false;
+			}
+			}
+		</script>
+	</head>
+	<body onload="init()" >
+		<form action="../首页.html" onsubmit="return checkForm()" >
+			<div>
+			<!--2. 第一部份: LOGO部分: 嵌套三个div-->
+			<div>
+				<div class="logo">
+					<img src="../Pic/img/logo2.png"/>
+				</div>
+				<div class="logo">
+					<img src="../Pic/img/header.jpg"/>
+				</div>
+				<div class="logo">
+					<a href="#" >登录</a>
+					<a href="#" >注册</a>
+					<a href="#" >购物车</a>
+				</div>
+			</div>
+			<!-- <font size="2" color="#000000"></font> -->
+				
+			<!--清除浮动-->
+			<div style="clear: both;"></div>
+			
+			
+			<!--3. 第二部分: 导航栏部分 : 放置5个超链接-->
+			<div style="background-color: black; height: 50px;">
+				<a href="#" class="amenu" >首页</a>
+				<a href="#" class="amenu">手机数码</a>
+				<a href="#" class="amenu">电脑办公</a>
+				<a href="#" class="amenu">鞋靴箱包</a>
+				<a href="#" class="amenu">香烟酒水</a>
+			</div>
+			<div style="background-image:url(../Pic/image/regist_bg.jpg) ; height:31.25rem ;">
+				<div style="border: 0.3125rem solid gray;width: 50%;height: 50%;position: absolute;top: 10rem;left: 350px;background-color: white;" >
+					<div style="position: relative;top: 50px;">
+						<table  align="center" width="60%"  height="70%">
+							<tr>
+								<td >
+									<font size="5">会员注册</font> 
+								</td>
+									
+								<td>
+									<font color="red">REGISTER</font>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<font>用户名</font>
+								</td>
+								<td>
+									<input type="text" id="usr" onfocus="showTips('tip','<font color =red size =2>用户名不少于6</font>')" onblur="checkName('tip','usr','<font color =red size =2>用户名小于6</font>','<font color =red size =2>用户名满足要求</font>')" onkeyup="checkName('tip','usr','<font color =red size =2>用户名小于6</font>','<font color =red size =2>用户名满足要求</font>')" />
+									<span id="tip"></span>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<font>密码</font>
+								</td>
+								<td>
+									<input type="password" id="password" onfocus="showTips('pwtip','<font color =red size =2>密码不少于6</font>')" onblur="checkName('pwtip','password','<font color =red size =2>用户名小于6</font>','<font color =red size =2>密码满足要求</font>')" onkeyup="checkName('pwtip','password','<font color =red size =2>密码小于6</font>','<font color =red size =2>密码满足要求</font>')" />
+									<span id="pwtip"></span>
+								</td>
+								
+							</tr>
+							<tr>
+								<td>
+									<font>确认密码</font>
+								</td>
+								<td>
+									<input type="password" id="cpassword" onfocus="showTips('cpwtip','<font color =red size =2>请重新输入密码</font>')" onblur="checkpassword()" onkeyup="checkpassword()" />
+									<span id="cpwtip"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font>Email</font>
+								</td>
+								<td>
+									<input type="email" id="emial" onfocus="showTips('espan','<font color =red size =2>请输入正确的邮箱地址</font>')" onblur="checkemail()" onkeyup="checkemail()" />
+									<span id="espan"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font>姓名</font>
+								</td>
+								<td>
+									<input type="text" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font>性别</font>
+								</td>
+								<td>
+									<input type="radio" name="sex" />男
+									<input type="radio" name="sex" />女
+									
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font>出生日期</font>
+								</td>
+								<td>
+									<input type="date" />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font>验证码</font>
+								</td>
+								<td>
+									<input type="text" id="yzmco" onfocus="showTips('yzmid','<font color =red size =2>请输入验证码</font>')" onblur="yzmjg()"  />
+									<span >
+										<img  src="#" id="yzmpic" width="80px" height="15px" />
+									</span>
+									<span id="yzmid">
+										
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<font >户籍</font>
+								</td>
+								<td>
+									<select  id="pro" onchange="huanxian()">
+										<option value ="0">---请选择---</option>
+										<option value ="1">北京</option>
+										<option value ="2">湖北</option>
+										<option value ="3">河北</option>
+									</select>
+									<select id="xian">
+										<option>---请选择---</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									
+								</td>
+								<td>
+									<input type="submit" value="注册"  />
+								</td>
+							</tr>
+
+						</table>
+					</div>
+				</div>
+			</div>
+						<!--5. 第四部分是FOOTER图片-->
+			<div>
+				<img src="../Pic/img/footer.jpg" width="100%"/>
+			</div>
+			<!--9. 第四部分: 放一堆超链接-->
+			<div style="text-align: center;">
+				        
+					<a href="#" class="href">关于我们</a>
+					<a href="#" class="href">联系我们</a>
+					<a href="#" class="href">招贤纳士</a>
+					<a href="#" class="href">法律声明</a>
+					<a href="#" class="href">友情链接</a>
+					<a href="#" class="href">支付方式</a>
+					<a href="#" class="href">配送方式</a>
+					<a href="#" class="href">服务声明</a>
+					<a href="#" class="href">广告声明</a>
+					
+					<br />
+					
+					Copyright © 2005-2016 传智商城 版权所有
+			</div>
+			</form>
+	</body>
+</html>

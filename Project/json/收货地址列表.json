@@ -1,0 +1,28 @@
+{
+	"code":200,
+	"msg":"success",
+	"result":[
+		{
+			"deliverName":"张笑笑",
+			"deliverAddrs":"陕西省 宝鸡市 渭滨区 桥南街道",
+			"deliverConcrete":"公园路61附5号渭滨区互联网产业园1号楼705室",
+			"user_Num":"182******56",
+			"defaultJdg":"1"
+		},
+		{
+			"deliverName":"张笑笑",
+			"deliverAddrs":"陕西省 宝鸡市 渭滨区 桥南街道",
+			"deliverConcrete":"公园路61附5号渭滨区互联网产业园1号楼705室",
+			"user_Num":"182******56",
+			"defaultJdg":"0"
+		},
+		{
+			"deliverName":"张笑笑",
+			"deliverAddrs":"陕西省 宝鸡市 渭滨区 桥南街道",
+			"deliverConcrete":"公园路61附5号渭滨区互联网产业园1号楼705室",
+			"user_Num":"182******56",
+			"defaultJdg":"0"
+		}
+
+	]
+}

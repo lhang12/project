@@ -1,0 +1,66 @@
+{
+  "code": 200,
+  "msg": "success",
+  "result":[
+    {
+      "TYPE_Article":0,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"images/yi1.png",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "URL_ARTICA":"/topics/123.html",
+          "flag":0
+        }
+      ]
+
+    },
+    {
+      "TYPE_Article":1,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"images/yi1.png",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "URL_ARTICA":"/topics/123.html",
+          "flag":0
+        }
+      ]
+
+    },
+    {
+      "TYPE_Article":2,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"images/yi1.png",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "URL_ARTICA":"/topics/123.html",
+          "flag":0
+        }
+      ]
+
+    },
+    {
+      "TYPE_Article":3,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"images/yi1.png",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "URL_ARTICA":"/topics/123.html",
+          "flag":0
+        }
+      ]
+
+    }
+  ]
+}

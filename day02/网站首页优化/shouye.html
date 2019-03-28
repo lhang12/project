@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.logo{
+				float: left;
+				/* border: 1px solid red; */
+				height: 60px;
+				width: 33%;
+				text-align: center;
+				line-height: 60px;
+				
+			}
+			.amenu{
+				color: white;
+				size: a5;
+				height: 3.125rem;
+				line-height: 3.125rem;
+				text-decoration: none;
+			}
+			.lable{
+				text-decoration: none;
+			}
+			.product{
+				float: left;
+				text-align: -webkit-center;
+				height: 15rem;
+				width: 16%;
+				border: 0.0625rem solid red;
+			}
+			.PI{
+				color: red;
+				
+			}
+		</style>
+		<script>
+			var index=1;
+			var curindex;
+			function chagImg(){
+				var log = document.getElementById("logo");
+				
+				index=index+1;
+				curindex=index%3+1;
+				log.src="Pic/img/"+curindex+".jpg";
+			}
+			function init(){
+				setInterval("chagImg()",3000);
+			}
+			
+		</script>
+	</head>
+	<body onload="init()">
+		<div style=";">
+			<div class="logo">
+				<img src="Pic/img/logo2.png" />
+			</div>
+			<div class="logo">
+				<img src="Pic/img/header.jpg" />
+			</div>
+			<div class="logo">
+				<a href="#" class="lable">登陆</a>
+				<a href="#" class="lable">注册</a>
+				<a href="#" class="lable">购物车</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div style="background-color: black; height: 3.125rem;">
+			<a href="#" class="amenu">首页</a>
+			<a href="#" class="amenu">手机数码</a>
+			<a href="#" class="amenu">电脑办公</a>
+			<a href="#" class="amenu">家电</a>
+			<a href="#" class="amenu">日用</a>
+			<a href="#" class="amenu">食品</a>
+		</div>
+		<div>
+			<img src="Pic/img/1.jpg" style="width: 100%;" id="logo" />
+		</div>
+		<div>
+			<div>
+				<h2>
+					最新商品
+					<img src="Pic/img/title2.jpg" />
+				</h2>
+			</div>
+
+				<div style="width: 14.5%;height: 30rem;float: left;">
+						<img src="Pic/products/hao/big01.jpg" width="100%" />
+				</div>
+				<div style="width: 85%;height: 30rem;float: left;">	
+					<div style="height: 15rem;width: 50%;float: left;border: 0.0625rem solid red;">
+						<img src="Pic/products/hao/middle01.jpg" width="100%" height="100%" />
+					</div>
+					<div class="product">
+						<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>	
+				</div>
+			
+		</div>
+		<div>
+			<div>
+				<h2>
+					最新商品
+					<img src="Pic/img/title2.jpg" />
+				</h2>
+			</div>
+		
+				<div style="width: 14.5%;height: 30rem;float: left;">
+						<img src="Pic/products/hao/big01.jpg" width="100%" />
+				</div>
+				<div style="width: 85%;height: 30rem;float: left;">	
+					<div style="height: 15rem;width: 50%;float: left;border: 0.0625rem solid red;">
+						<img src="Pic/products/hao/middle01.jpg" width="100%" height="100%" />
+					</div>
+					<div class="product">
+						<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>			
+					<div class="product">
+												<img src="Pic/products/hao/small01.jpg" />
+						<p class="PI">电磁炉</p>
+						<p class="PI">￥200</p>
+					</div>	
+				</div>
+			
+		</div>
+		<div>
+			<img src="Pic/img/footer.jpg" />
+		</div>
+		<div style="text-align: center;">
+			<a href="#">youqinglianjie </a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+			<a href="#"></a>
+		</div>
+		<div style="text-align: center;">
+			Copyright © 2005-2016 传智商城 版权所有
+		</div>
+		<div></div>
+	</body>
+</html>

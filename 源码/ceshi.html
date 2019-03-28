@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/laohuangli.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+// 			var url="data.json";
+// 			$.get(url,function(data){
+// 				// console.log(data);
+				
+			// })
+			var url="data.json";
+			$.get(url,function(data){
+				var goodcount=Math.floor(Math.random()*3+1);
+				var badcount=Math.floor(Math.random()*3+1);
+				// alert(goodcount)
+				// $(".good .content ").append("<li><div class='name'>"+data[1].name+"</div><div class='description'>"+data[1].good+"</div></li>")
+				// $(".bad .content ").append("<li><div class='name'>"+data[1].name+"</div><div class='description'>"+data[1].bad+"</div></li>")
+				// $(".bad table").append("<tr><td>"+data[1].bad+"</td></tr>")
+				while(goodcount>0){
+					
+					var goodindex = Math.floor(Math.random()*data.length);
+					// alert(index)
+					$(".good .content ").append("<li><div class='name'>"+data[goodindex].name+"</div><div class='description'>"+data[goodindex].good+"</div></li>")
+					goodcount=goodcount-1;
+				}
+				while(badcount>0){
+					
+					var badindex = Math.floor(Math.random()*data.length);
+					// alert(index)
+					$(".bad .content ").append("<li><div class='name'>"+data[badindex].name+"</div><div class='description'>"+data[badindex].good+"</div></li>")
+					badcount=badcount-1;
+				}
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">
+				程序员老黄历
+			</div>
+			<div class="good">
+				<div class="title">
+					<table>
+						<tr><td>宜</td></tr>
+					</table>
+				</div>
+				<div class="content">
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="split"></div>
+			
+			<div class="bad">
+				<div class="title">
+					<table>
+						<tr><td>不宜</td></tr>
+					</table>
+				</div>
+				<div class="content">
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</body>
+</html>

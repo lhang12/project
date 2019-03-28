@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function tips(){
+				usr = document.getElementById("usr_span");
+				usr.innerHTML="<font >用户名不少于6</font>";
+			}
+			function checkUsrName(){
+				usr = document.getElementById("text");
+				uUsr = usr.value;
+				busr = document.getElementById("usr_span");
+				if(uUsr.length<6){
+					
+					busr.innerHTML="<font >用户名小于6</font>";
+					return false;
+				}else{
+					
+					busr.innerHTML="<font >符合要求</font>";
+					return true;
+				}
+			}
+			function CheckForm(){
+				var flag = checkUsrName();
+
+				return flag;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<form action="../../首页.html" method="" onsubmit="return CheckForm()" >
+			用户名：<input type="text" onblur="checkUsrName()" onkeyup="checkUsrName()" onfocus="tips()" id="text"  /><span id="usr_span" ></span><br />
+			密码  ：<input type="password" name="" id="" value="" /><br />
+			手机号：<input type="number" name="" id="" value="" /><br />
+			邮箱  ：<input type="email" name="" id="" value="" /><br />
+			<input type="submit" name="" id="" value="注册" /><br />
+		</form>
+	</body>
+</html>

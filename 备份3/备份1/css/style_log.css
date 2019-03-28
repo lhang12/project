@@ -1,0 +1,62 @@
+﻿/*公共样式*/
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,
+p,blockquote,th,td { margin:0; padding:0; }
+body { margin:0; padding:0; color:#333; font-size:14px;font-family:"PingFang SC","Microsoft YaHei","Lantinghei SC","HanHei SC","Helvetica Neue","Open Sans",Arial,"Hiragino Sans GB","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+a { color:#333; text-decoration:none; }
+img { border:none;}
+ol,ul,li { list-style:none; }
+input{ outline-style: none; padding: 0; margin:0; list-style: none; border: none;}
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+i,em{ font-style: normal;}
+.clear{clear: both;}
+.wrap{width: 100%;background: #f4f4f4;height: auto;overflow: hidden;}
+.content{width: 1200px;margin: 0 auto;height: auto;overflow: hidden;}
+/*登录页面部分*/
+.login-body{width: 100%; height:100%; min-height:768px;position: relative;box-sizing: border-box;background:url(../images/login-bg.png)  top center no-repeat;z-index:1}
+.login-div-box{position:absolute;width:100%;height:600px;z-index:2;top:10%; left:0;}
+.login-div{position: relative;width:340px;min-height:480px;overflow:hidden;background:#fff;margin:0 auto;box-shadow:0 1px 3px 0 rgba(0,0,0,.3);padding:30px 32px;}
+.login-tab-box{display: block;}
+.login-tab-box .hd{margin-top:28px;height:30px;}
+.login-tab-box .hd em{display: inline-block;font-size: 18px;color: #666;line-height:30px;}
+.login-tab-box .hd .login{float: left;}
+.login-tab-box .hd .register{float:right;}
+.login-tab-box .hd .login{float: left;}
+.login-tab-box .hd em.on{color: #377BEE;}
+.login-tab-box .bd{background: #ffffff;margin-top:24px;padding-bottom:14px;position: relative;z-index:2 ;}
+.login-input{position: relative;}
+.login-user{margin-bottom: 24px;position: relative;}
+.icon-user{display:block;width:40px; height:40px;background: url(../images/icon-user.png) 8px 10px no-repeat;}
+.icon-password{display:block;width:40px; height:40px;background: url(../images/icon-pwd.png) 8px 10px no-repeat;}
+.login-input label{display:block;width:40px;height:40px;border-right: 1px solid #ddd;background: #eee;text-align: center;position: absolute;left: 1px;top: 1px;outline: 0;}
+.login-user .input{width:290px;height: 40px;line-height: 40px;border: 1px solid #DDDDDD;padding-left:48px;font-size: 16px;color: #666;}
+.login-btn{margin-bottom: 20px;}
+.login-btn input[type=button]{width: 340px;height: 42px;line-height: 42px;font-size: 18px;letter-spacing:8px;text-align: center;background: #377BEE;color: #fff;border-radius:3px;}
+.login-auto{line-height: 16px;position: relative;height: 16px;}
+.login-auto .checkbox{float: left;}
+.login-auto .checkbox input[type=checkbox]{position: absolute;width: 14px;height: 14px;top:2px;left:0 ;}
+.login-auto .checkbox span{font-size: 16px;color: #377BEE;padding-left:20px;}
+.login-auto .forget-pwd{float: right;}
+.login-auto .forget-pwd a{font-size: 16px;color: #666;}
+/*注册页面部分*/
+.login-user .reg-input{width:330px;height: 40px;line-height: 40px;border: 1px solid #DDDDDD;padding-left:8px;font-size: 16px;color: #666;}
+.login-user .code-telp{ float:right;display:block;font-size: 16px;height: 40px;line-height: 40px;text-align: center;padding:0 20px;background: #377BEE;color:#fff;}
+.login-user .code-num{width:160px;height: 40px;line-height: 40px;border: 1px solid #DDDDDD;padding-left:8px;font-size: 16px;color: #666;}
+.login-auto .checkbox p{font-size: 16px;color: #666;padding-left:20px;}
+.login-auto .checkbox p b{color: #377BEE;}
+.login-top{margin-top:24px;}
+/*第三方登录方式引入*/
+.login-third{position: absolute;bottom:30px;left: 0;right:0}
+.login-third p{text-align: center;font-size: 16px;color: #666;margin-bottom: 16px;}
+.login-account{text-align: center;}
+.login-account .wechat-login,.login-account .qq-login,.login-account .web-login{display:inline-block;width: 42px;height: 42px;background-color: #dddddd;background-repeat: no-repeat;background-position: center;border-radius: 50%;cursor: pointer;margin: 0 8px;}
+.login-account .wechat-login{background-image: url(../images/wechat.png);}
+.login-account .web-login{background-image: url(../images/web.png);}
+.login-account .qq-login{background-image: url(../images/qq.png);}
+.login-account .wechat-login:hover{background-color: #58bc46}
+.login-account .web-login:hover{background-color: #e90e24}
+.login-account .qq-login:hover{background-color: #3caae3;}
+.logo-login{position:relative;width:247px;height: 76px;margin: 0 auto;z-index:99;}
+.logo-login a{position: absolute;width:247px;height: 76px;top:40px;left: 0;right:0;}

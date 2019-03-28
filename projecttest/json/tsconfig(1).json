@@ -1,0 +1,359 @@
+//患者登录接口
+//1.地址：/user/login
+//2.请求：请求方式POST  名称	    必填	   类型	   说明
+//       请求参数：--username     是    string   手机、邮箱或用户名
+//                --password     是    string   用户密码
+//                --autologin    是    boolean  是否设置自动登录
+//3.响应JSON示例
+//验证成功
+/*{
+  "code": 200,
+  "msg": "ok"
+  "status":0
+}*/
+//验证失败
+/*{
+"code": 200,
+"msg": "fail",
+"status":-1      [-1:用户名不存在，-2：密码错误]
+}*/
+
+
+//医生登录接口
+//1.地址：/doctor/login
+//2.请求：请求方式POST  名称	    必填	   类型	   说明
+//       请求参数：--username     是    string   手机、邮箱或用户名
+//                --password     是    string   用户密码
+//                --autologin    是    boolean  是否设置自动登录
+//3.响应JSON示例
+//验证成功
+/*{
+  "code": 200,
+  "msg": "ok"
+  "status":0
+}*/
+//验证失败
+/*{
+"code": 200,
+"msg": "fail",
+"status":-1      [-1:用户名不存在，-2：密码错误]
+}*/
+
+//患者注册页面
+//1.地址：/user/register
+//2.请求：请求方式POST  名称	    必填	   类型	   说明
+//       请求参数：--phoneNum     是    number   手机号码
+//                --verifiCode   是    int      手机动态验证码
+//                --password     是    string   密码
+//3.响应JSON示例
+//注册成功
+/*{
+  "code": 200,
+  "msg": "ok"
+}*/
+//注册失败
+/*{
+"code": 200,
+"msg": "failed"
+}*/
+
+
+//手机号码是否可注册验证
+//1.地址：/user/register/userexisted
+//2.请求：请求方式POST  名称	    必填	   类型	   说明
+//       请求参数：--phoneNum     是    number   手机号码
+//3.响应JSON示例
+//号码可注册
+/*{
+  "code": 200,
+  "msg": "yes"
+}*/
+//号码已存在，不可注册
+/*{
+"code": 200,
+"msg": "no"
+}*/
+
+
+//首页搜索框！！！！--没有UI
+//1.地址：/index/search
+//2.请求：请求方式POST  名称	    必填	   类型	   说明
+//       请求参数：--searchInfo   是    string   用户输入的科室或医生名
+//3.响应JSON示例
+//号码可注册
+/*{
+  "code": 200,
+  "msg": "yes"
+}*/
+//号码已存在，不可注册
+/*{
+"code": 200,
+"msg": "no"
+}*/
+
+
+//各科室常见病--可能写死
+//1.地址：/index/commonDisease
+//2.请求：请求方式GET    名称	      必填	   类型	   说明
+//       请求参数：--departmentId   是     number   科室对应的ID
+//3.响应JSON示例
+//查询成功后，返回该科室下所有的常见疾病的结果数组
+/*{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "diseaseId":101,
+      "diseaseName":"甲肝"
+    },
+    {
+      "diseaseId":102,
+      "diseaseName":"乙肝"
+    }
+  ]
+}*/
+//查询失败
+/*{
+"code": 200,
+"msg": "failed"
+}*/
+
+
+//快速挂号-科室列表
+//1.地址：/index/departmentList
+//2.请求：请求方式GET    名称	      必填	   类型	   说明
+//       请求参数：
+//3.响应JSON示例
+//查询成功后，返回常见疾病的结果数组
+/*{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "ID_Department":1,
+      "NM_Department":"内科"
+    },
+    {
+      "ID_Department":2,
+      "NM_Department":"外科"
+    }
+  ]
+}*/
+//查询失败
+/*{
+"code": 200,
+"msg": "failed"
+}*/
+
+
+//快速挂号-医生列表
+//1.地址：/index/doctorList
+//2.请求：请求方式GET    名称	      必填	   类型	   说明
+//       请求参数：--departmentId   是      number   科室对应的ID
+//3.响应JSON示例
+//查询成功后，返回该科室下医生列表的结果数组
+/*{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "ID_Doctor":1,
+      "NM_Doctor":"张三"
+    },
+    {
+      "ID_Doctor":2,
+      "NM_Doctor":"李四"
+    }
+  ]
+}*/
+//查询失败
+/*{
+"code": 200,
+"msg": "failed"
+}*/
+
+
+//快速挂号-快速预约挂号
+//1.地址：/index/reservation
+//2.请求：请求方式GET    名称	        必填	     类型	   说明
+//       请求参数：--departmentId     是      number     科室对应的ID
+//                --doctorId         是      number     医生对应的ID
+//                --patientName      是      string     患者姓名
+//                --patientIdNumber  是      number     患者身份证号码
+//                --patientPhoneNum  是      number     患者手机号码
+//3.响应JSON示例
+//请求成功后，跳转到预约挂号子页面，并在页面中事先填写好用户三项基本信息
+/*{
+  "code": 200,
+  "msg": "reserve success",
+  "result":{
+    "NM_Patient":"张三",
+    "ID_IDCard":110111111111111111,
+    "TEL_Patient":18888888888
+  }
+}*/
+//查询失败
+/*{
+"code": 200,
+"msg": "reserve failed"
+}*/
+
+
+
+//首页-医生列表
+//1.地址：/index/consult/doctorList
+//2.请求：请求方式GET    名称	             必填	   类型	     说明
+//       请求参数：--firstDepartmentId     是       number     一级科室对应的ID
+//3.响应JSON示例
+//请求成功后，返回医生基本信息数组，数组长度为7
+/*{
+  "code": 200,
+  "msg": "success",
+  "result":[
+    {
+      "ID_Doctor":1,
+      "NM_Doctor":"张黎",
+      "Head_Portrait":"/pic/1001", //头像地址
+      "second-department-id":101,
+      "second-department-name":"心血管内科",
+      "Job_Infor":"主任医师",
+      "Score":9.6,
+      "followed":0, //该登录用户是否已关注此医生
+      "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+    },
+    {
+      "ID_Doctor":2,
+      "NM_Doctor":"王五",
+      "Head_Portrait":"/pic/1002", //头像地址
+      "second-department-id":102,
+      "second-department-name":"心血管外科",
+      "Job_Infor":"副主任医师",
+      "Score":9.3,
+      "followed":1, //该登录用户是否已关注此医生，0未关注，1已关注
+      "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+    }
+  ]
+}*/
+//查询失败
+/*{
+"code": 200,
+"msg": "reserve failed"
+}*/
+
+
+
+//医疗资讯
+//1.地址：/index/medicalInfo
+//2.请求：请求方式GET    名称	             必填	   类型	     说明
+//       请求参数：
+//3.响应JSON示例
+//请求成功后，返回热点关注、健康常识、养生保健、心理健康列表数组，数组长度为7*4（TYPE_Article分别为0，1，2，3）
+/*{
+  "code": 200,
+  "msg": "success",
+  "result":[
+    {
+      "TYPE_Article":0,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{},{},{},{},{}
+      ]
+
+    },
+    {
+      "TYPE_Article":1,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{},{},{},{},{}
+      ]
+
+    },
+    {
+      "TYPE_Article":2,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{},{},{},{},{}
+      ]
+
+    },
+    {
+      "TYPE_Article":3,
+      "content":[
+        {
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{
+          "ID_Article":1,
+          "TITLE_Article":"就医攻略1",
+          "TITLE_Pic":"/pic/2001",
+          "Content_Article":"发烧是宝宝成长过程中",
+          "TM_CREATE":"2017-01-01",
+          "u-r-l":"/topics/123.html",
+          "flag":0
+        },{},{},{},{},{}
+      ]
+
+    }
+  ]
+}*/
+//查询失败
+/*{
+"code": 200,
+"msg": "search failed"
+}*/
+
+
+
+
+
+

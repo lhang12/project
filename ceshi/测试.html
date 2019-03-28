@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询所有学生的信息</title>
+ 
+    <link rel="stylesheet" href="css/common.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+    <style>
+        body{
+            background-color: #eee;
+        }
+        .main{
+            width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            min-height: 400px;
+            padding: 10px;
+        }
+        .main .toolbar{
+            margin: 10px 0px;
+        }
+        .main .content{
+            width: 200px;
+        }
+        .main .content .empty{
+            text-align: center;
+            padding: 4px;
+            display: block;
+            border: 0px solid #888;
+            border-width: 0px 1px 1px 1px;
+        }
+        .main .table .c1{
+            width: 80px;
+        }
+        .main .table .c2{
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+<div class="toolbar">
+    <button onclick="query()">查询</button>
+</div>
+<div class="content">
+    <table class="table">
+        <thead>
+        <th class="c1">学号</th>
+        <th class="c2">姓名</th>
+        </thead>
+        <tbody>
+		
+        </tbody>
+    </table>
+    <div class="empty">
+        没有数据
+    </div>
+ 
+</div>
+</div>
+</body>
+<script>
+    function query() {
+        $.ajax({
+            type:"GET",
+            url:"./a.json",
+            dataType:"json",
+            success:function (resp) {
+                showResult(resp);
+				
+				console.log(resp);
+            },
+			error: function (e) {
+                alert("error");
+            }
+        })
+    }
+    function showResult(result) {
+        var target = $(".main .content tbody");
+        target.html("");
+        for (var row of result){
+            var str ="<tr>"
+            +"<td>"+row.no+"</td>"
+                +"<td>"+row.name+"</td>"
+            +"</tr>";
+            target.append(str);
+
+        }
+        if (result.length>0){
+            $(".main .content .empty").hide();
+        }else {
+            $(".main .content .empty").show();
+        }
+    }
+</script>
+</html>

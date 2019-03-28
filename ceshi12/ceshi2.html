@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+    <select name="" id="city">
+        <option value="shanghai">上海</option>
+        <option value="hangzhou">杭州</option>
+    </select>
+    <script>
+        var params = location.href.substring(location.href.lastIndexOf('?')+1).split('&');
+        document.getElementById('content').innerText = params;
+        var city = document.getElementById('city');
+        city.onchange = function() {
+            window.opener.getContent(city.value);
+        }
+    </script>
+</body>
+</html>

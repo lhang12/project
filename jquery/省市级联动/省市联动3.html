@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+			var provinces = [
+				["深圳市","东莞市","惠州市","广州市"],
+				["长沙市","岳阳市","株洲市","湘潭市"],
+				["厦门市","福州市","漳州市","泉州市"]
+			];
+			$(function(){
+				$("#province").change(function(){
+					var cities = provinces[this.value];
+					$("#city").empty();
+					$(cities).each(function(i,n){
+						$("#city").append("<option>"+n+"</option>");
+					})
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<select id="province">
+			<option value="-1">---请选择---</option>
+			<option value="0">广东省</option>
+			<option value="1">湖南省</option>
+			<option value="2">福建省</option>
+		</select>
+		<select id="city">
+			
+		</select>
+	</body>
+</html>

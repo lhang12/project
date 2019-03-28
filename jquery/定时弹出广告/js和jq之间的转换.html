@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" >
+			
+		</script>
+		<script>
+			function changejs(){
+				var div = document.getElementById("div1");
+				div.innerHTML="用js修改了";
+			}
+			$(function(){
+				$("#btn2").click(function(){
+					// $("#div1").html("JQ方式修改了内容");
+					var $div = $("#div1");
+					var jsDiv = $div.get(0);
+					// var jsDiv = $div[0];
+					jsDiv.innerHTML="我就是一下";
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" value="js转换" onclick="changejs()" />
+		<input type="button" value="jq转换"id="btn2" />
+		<div id="div4">
+			这里内容会被修改000
+		</div>
+		<div id="div1">
+			这里内容会被修改111
+		</div>
+		<div id="div2">
+			这里内容会被修改222
+		</div>
+		<div id="div3">
+			这里内容会被修改333
+		</div>
+	</body>
+</html>

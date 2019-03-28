@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+			function showAd(){
+				$("#img").slideDown(3000);
+				setTimeout("hideAd()",5000);
+				
+			}
+			function hideAd(){
+				$("#img").slideUp(3000);
+			}
+			$(function(){
+				setTimeout("showAd()",5000);
+			})
+		</script>
+	</head>
+	<body>
+		<img src="Pic/image/2.jpg" width="730px" id="img" style="display: none;" />
+	</body>
+</html>

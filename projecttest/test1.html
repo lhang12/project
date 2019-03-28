@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>测试页面</title>
+		<script type="text/javascript" src="jquery-3.3.1.min.js">
+
+		</script>
+		<script src="js/jquery_session.js"></script>
+
+	</head>
+	<body>
+		<!-- <a href="test2.html?name=张三&IDcard=123123&phone=123123  " id="123" >test1.html</a> -->
+		<p id="123">test1.html</p>
+
+	</body>
+	<script>
+		$("#123").click(function() {
+			// alert("hahaha");
+			$.session.set('name','tom');
+			$.session.set('IDcard','12312414');
+			$.session.set('phone','124312345');
+			location.assign('test2.html');
+		})
+	</script>
+</html>

@@ -1,0 +1,258 @@
+{
+  "code": 200,
+  "msg": "success",
+  "result":[
+    {
+      "type_article":"0",
+      "content":[
+        {
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+					"content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        }
+      ]
+
+    },
+    {
+      "type_article":"1",
+      "content":[
+        {
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        }
+      ]
+
+    },
+    {
+      "type_article":"2",
+      "content":[
+        {
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        }
+      ]
+
+    },
+    {
+      "type_article":"3",
+      "content":[
+        {
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        },{
+          "id_Article":1,
+          "title_Article":"就医攻略1",
+          "title_Pic":"images/yi1.png",
+          "content_Article":"发烧是宝宝成长过程中",
+          "tm_CREATE":"2017-01-01",
+           
+          "flag":0
+        }
+      ]
+
+    }
+  ]
+}

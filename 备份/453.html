@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" >
+			
+		</script>
+		<script src="addPhoto.js" ></script>
+		<script src="upload.js"></script>
+	</head>
+	<body>
+		<!--图片缩略图-->
+         <div class="weui-cells weui-cells_form" style="margin-top:0px;">
+                <div class="weui-cell">
+                      <div class="weui-cell__bd">
+                        <div class="weui-uploader">
+                            <div class="weui-uploader__hd">
+                                    <p class="weui-uploader__title" style="font-size: 14px;">照片:</p>
+                                 <div class="weui-uploader__info"><span id="curNum">0</span>/3</div>
+                            </div>
+                            <div class="weui-uploader__bd">
+                                <ul class="weui-uploader__files" id="uploaderFiles"></ul> <!--缩略图显示-->
+                                <div class="weui-uploader__input-box">
+                                        <form action="" id="upBox_add" onsubmit="return false;">
+                                        <input id="uploaderInput" name="file" class="weui-uploader__input zjxfjs_file" type="file"  capture="camera" accept="image/png,image/jpg,image/gif,image/JPEG" multiple=""></input>
+                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <!--放大图片显示-->
+          <div class="weui-gallery" id="gallery">
+                  <span class="weui-gallery__img" id="galleryImg" style="bottom: 12%;"></span>
+                  <div class="weui-gallery__opr" style="width:50%;">
+                    <a href="javascript:" class="weui-gallery__del">
+                        <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+                    </a>
+                </div>
+                 <!-- 图片旋转按钮-->
+                 <div class="weui-gallery__opr2" style="z-index: 1200;width:50%;position: absolute;bottom:0;right:0;background-color: #0d0d0d;color: #fff;line-height: 60px;text-align: center;">
+                    <a href="javascript:" class="weui-gallery__rot">
+                        <img src="/images/report/rotate.png" style="vertical-align: middle;"/>
+                    </a> 
+                 </div>
+         </div>
+
+
+　　 <!--图片上传时, 给出上传提示, 并且不可操作数据, 上传完成去掉提示-->
+     <div id="loading" style="display:none; width:100%;height:100%;position:absolute;opacity: 0.5;z-index: 1001;">
+          <div id="inner" style="display:none;width:22%; position:absolute; left:45%; top:33%;font-size: 16px;font-weight: bold;">  
+                   <p>正在上传...</p>
+          </div>
+     </div>
+	</body>
+</html>

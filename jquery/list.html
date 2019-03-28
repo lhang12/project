@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+			$(function(){
+				$("#btn1").click(function(){
+					$("#rightSelect").append($("#leftSelect option:selected"))
+				})
+				$("#btn2").click(function(){
+					$("#rightSelect").append($("#leftSelect option"))
+				})
+				$("#btn3").click(function(){
+					$("#leftSelect").append($("#rightSelect option:selected"))
+				})
+				$("#btn4").click(function(){
+					$("#leftSelect").append($("#rightSelect option"))
+				})
+			})
+		</script>
+	</head>
+		
+	<body>
+		<div style="float: left;">
+			<select multiple="multiple" id="leftSelect">
+				<option>华为</option>
+				<option>小米</option>
+				<option>锤子</option>
+				<option>oppo</option>
+				<option>vivo</option>
+			</select><br />
+			<a href="#" style="text-decoration: none;" id="btn1">&gt;&gt</a><br />
+			<a href="#" style="text-decoration: none;" id="btn2">&gt;&gt;&gt</a>
+		</div>
+		<div style="float: left;">
+			<select multiple="multiple" id="rightSelect">
+				<option>苹果6</option>
+				<option>苹果7</option>
+				<option>苹果8</option>
+				<option>苹果xs</option>
+				<option>三星</option>
+			</select><br />
+			<a href="#" style="text-decoration: none;" id="btn3">&lt;&lt</a><br />
+			<a href="#" style="text-decoration: none;" id="btn4">&lt;&lt;&lt</a><br />
+		</div>
+	</body>
+</html>

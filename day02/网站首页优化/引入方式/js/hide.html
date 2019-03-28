@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function display(){
+				var img=document.getElementById("img1");
+				img.style.display="block";
+				setTimeout("hide()",5000)
+			}
+			function hide(){
+				var img=document.getElementById("img1");
+				img.style.display="none"
+			}
+			function init(){
+				setTimeout("display()",5000);
+			}
+		</script>
+	</head>
+	<body onload="init()">
+
+		<img src="../../Pic/bank_img/abc.bmp" style="display: none;" id="img1" />
+	</body>
+</html>

@@ -1,0 +1,126 @@
+{
+	"内科":[
+		{
+		"docterimg": "images/touxiang.png",
+		"name": "张黎",
+		"position": ["心血管内科", "主任医师"],
+		"grade": "9.6",
+		"follow":false,
+		"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+		"vidiostate":false,
+		"picstate":false	
+		},{
+			"docterimg": "images/touxiang.png",
+			"name": "张黎",
+			"position": ["心血管内科", "主任医师"],
+			"grade": "9.6",
+			"follow":false,
+			"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+			"vidiostate":false,
+			"picstate":false
+		},{
+			"docterimg": "images/touxiang.png",
+			"name": "张黎",
+			"position": ["心血管内科", "主任医师"],
+			"grade": "9.6",
+			"follow":false,
+			"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+			"vidiostate":false,
+			"picstate":false
+		}
+	],
+	"外科":[
+		{
+			"docterimg": "images/touxiang.png",
+			"name": "张黎",
+			"position": ["心血管内科", "主任医师"],
+			"grade": "9.6",
+			"follow":false,
+			"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+			"vidiostate":false,
+			"picstate":false
+		},{
+			"docterimg": "images/touxiang.png",
+			"name": "张黎",
+			"position": ["心血管内科", "主任医师"],
+			"grade": "9.6",
+			"follow":false,
+			"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+			"vidiostate":false,
+			"picstate":false
+		},{
+			"docterimg": "images/touxiang.png",
+			"name": "张黎",
+			"position": ["心血管内科", "主任医师"],
+			"grade": "9.6",
+			"follow":false,
+			"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+			"vidiostate":false,
+			"picstate":false
+		}
+	],
+	"妇产科":[
+		{
+			"docterimg": "images/touxiang.png",
+			"name": "张黎",
+			"position": ["心血管内科", "主任医师"],
+			"grade": "9.6",
+			"follow":false,
+			"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+			"vidiostate":false,
+			"picstate":false
+		},{
+			"docterimg": "images/touxiang.png",
+			"name": "张黎",
+			"position": ["心血管内科", "主任医师"],
+			"grade": "9.6",
+			"follow":false,
+			"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+			"vidiostate":false,
+			"picstate":false
+		}
+	],
+	"耳科":[
+		{
+		"docterimg": "images/touxiang.png",
+		"name": "张黎",
+		"position": ["心血管内科", "主任医师"],
+		"grade": "9.6",
+		"follow":false,
+		"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+		"vidiostate":false,
+		"picstate":false}
+	],
+	"儿科":[
+		{
+		"docterimg": "images/touxiang.png",
+		"name": "张黎",
+		"position": ["心血管内科", "主任医师"],
+		"grade": "9.6",
+		"follow":false,
+		"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+		"vidiostate":false,
+		"picstate":false}
+	],
+	"肿瘤科":[
+		{
+		"docterimg": "images/touxiang.png",
+		"name": "张黎",
+		"position": ["心血管内科", "主任医师"],
+		"grade": "9.6",
+		"follow":false,
+		"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+		"vidiostate":false,
+		"picstate":false}
+	],
+	"皮肤科":[
+		{		"docterimg": "images/touxiang.png",
+		"name": "张黎",
+		"position": ["心血管内科", "主任医师"],
+		"grade": "9.6",
+		"follow":false,
+		"expertin": "各种常见斜视手的微验配；各种复杂遗传性眼底病的临床和基因....",
+		"vidiostate":false,
+		"picstate":false}
+	]
+}

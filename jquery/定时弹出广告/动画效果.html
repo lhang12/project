@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- JQ开发步骤 -->
+<!-- 	1.导入JQ相关文件
+		2.文档加载完成事件 $(function):绑定事件，启动页面定时器
+		3.确定相关操作事件
+		4.事件触发函数
+		5.函数里面再去操作相关元素
+		 -->
+		 <script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		 <script>
+			 $(function(){
+				 $("#btn2").click(function(){
+					 // $("#img1").hide(1000);
+					 // $("#img1").slideDown(500);
+					 $("#img1").animate({width:"1000px",opacity:"0.2"},5000);
+				 });
+				 $("#btn1").click(function(){
+					 // $("#img1").slideUp(500);
+					 $("#img1").animate({width:"200px",opacity:"1"},5000);
+					 
+									  })
+			 })
+			 
+		 </script>
+	</head>
+	<body>
+		<img src="../Pic/products/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg" id="img1" width="154px" /><br />
+		<input type="button" value="上拉" id="btn1" />
+		<input type="button" value="下拉" id="btn2"  /><br />
+	</body>
+</html>

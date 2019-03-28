@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+			var provinces = [
+				["深圳市","东莞市","惠州市","广州市"],
+				["长沙市","岳阳市","株洲市","湘潭市"],
+				["厦门市","福州市","漳州市","泉州市"]
+			];
+					
+				$.each(provinces,function(i,n){
+					var city = n;
+					$.each(city,function(j,m){
+						console.log(j+"---"+m);
+					})
+					
+				})
+// 			$(provinces).each(function(i,n){
+// 				var city = n;
+// 				$(city).each(function(j,m){
+// 					console.log(j+"---"+m);
+// 				})
+// 			})
+// 			$.each(provinces,function(i,n){
+// 				console.log(n);
+// 				})
+// 			})
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

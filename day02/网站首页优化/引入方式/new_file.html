@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function input(){
+				var con = document.createTextNode("我就试一试")
+				var p = document.createElement("p")
+				var div = document.getElementById("div1")
+				p.appendChild(con);
+				div.appendChild(p);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="添加文本" onclick="input()" />
+		<div id="div1">
+			
+		</div>
+	</body>
+</html>

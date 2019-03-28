@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <title>HTML5按比例缩略图片并上传的实例</title>
+
+  <style type="text/css">
+    body{margin: 0px; background:#f2f2f0;}
+    .title{color:#FFFF00; background:#000000; text-align:center; font-size:24px; line-height:50px; font-weight:bold;}
+    .main{margin:10px auto 10px auto; text-align:center;}
+    .main .file{padding-left:100px;}
+    .showimg{margin:10px auto 10px auto; text-align:center;}
+  </style>
+
+  <script type="text/javascript">
+    window.onload = function(){
+
+        // 上传按钮事件
+        document.getElementById('upload').onclick = function(){
+
+            // 图片上传控件
+            var img = document.getElementById('img').files[0];
+
+            // 缩略尺寸
+            var width = document.getElementById('width').value;
+            var height = document.getElementById('height').value;
+
+            // 判断是否选择图片
+            if(!img){
+                alert('请先选择图片');
+                return ;
+            }
+
+            // 判断图片格式
+            if(!(img.type.indexOf('image')==0 && img.type && /\.(?:jpg|png|gif)$/.test(img.name)) ){
+                alert('图片只能是jpg,gif,png格式');
+                return ;
+            }
+
+            // 判断width,height
+            if(isNaN(parseInt(width)) || isNaN(parseInt(height))){
+                alert('宽或高不正确');
+                return ;
+            }
+
+            // 缩略图片并上传
+            resize(img, width, height, upload);
+
+        }
+
+        // 缩略图片
+        function resize(img, width, height, callback){
+
+            // 创建临时图片对象
+            var image = new Image;
+
+            // 创建画布
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+
+            // 临时图片加载
+            image.onload = function(){
+
+                // 图片尺寸
+                var img_w = image.naturalWidth; 
+                var img_h = image.naturalHeight;
+
+                // 缩略后尺寸
+                var dimg_w;
+                var dimg_h;
+
+                // 计算缩略尺寸
+                dimg_w = width;
+                dimg_h = Math.ceil(dimg_w*img_h/img_w);
+
+                if(dimg_h>height){
+                    dimg_h = height;
+                    dimg_w = Math.ceil(dimg_h*img_w/img_h);
+                }
+
+                // 定义画布尺寸
+                canvas.width = dimg_w;
+                canvas.height = dimg_h;
+
+                // 在画布上按缩略尺寸画图
+                context.drawImage(image, 0, 0, dimg_w, dimg_h);
+
+                // 获取画布数据
+                var imgdata = canvas.toDataURL(img.type);
+
+                // 将画布数据回调返回
+                if(typeof(callback)==='function'){
+                    callback(imgdata);
+                }
+
+            }
+
+            // file reader
+            var reader = new FileReader();
+            reader.readAsDataURL(img);
+
+            reader.onload = function(e){
+                image.src = reader.result;
+            }
+
+        }
+
+        // 上传图片
+        var upload = function(imgdata){
+            $.post("server.php", {img: imgdata}, function(ret){
+                if(ret.img!=''){
+                    $('#showimg').html('<a href="' + ret.img + '" target="_blank"><img src="' + ret.img + '"></a>');
+                }else{
+                    alert('upload fail');
+                }
+            }, 'json');
+        }
+
+  }
+  $img = isset($_POST['img'])? $_POST['img'] : '';
+
+// 获取图片
+list($type, $data) = explode(',', $img);
+
+// 判断类型
+if(strstr($type,'image/jpeg')!=''){
+    $ext = '.jpg';
+}elseif(strstr($type,'image/gif')!=''){
+    $ext = '.gif';
+}elseif(strstr($type,'image/png')!=''){
+    $ext = '.png';
+}
+
+// 生成的文件名  
+$photo = time().$ext;
+
+// 生成文件
+file_put_contents($photo, base64_decode($data), true);
+
+// 返回
+header('content-type:application/json;charset=utf-8');
+$ret = array('img'=>$photo);
+echo json_encode($ret);
+  </script>
+
+ </head>
+
+ <body>
+  <p class="title">HTML5按比例缩略图片并异步上传的实例</p>
+  <div class="main">
+      <p class="file">图片：<input type="file" id="img"></p>
+      <p>宽：<input type="text" id="width" value="320"></p>
+      <p>高：<input type="text" id="height" value="240"></p>
+      <p><input type="button" id="upload" value="按比例缩略图片并上传"></p>
+  </div>
+  <p class="showimg" id="showimg"></p>
+ </body>
+</html>

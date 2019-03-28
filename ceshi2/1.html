@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="2.html" >
+			<input type="text" value="haha" />
+			<input type="submit" value="测试"/>
+		</form>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js">
+		
+	</script>
+	<script src="../js/jquery_session.js" ></script>
+	<script>
+		
+		$("input:nth-child(1)").val("ceshiyixai duibudui ")
+		alert($("input:nth-child(1)").val())
+		$.session.set('name','tom');
+		$.session.set('IDcard','12312414');
+		$.session.set('phone','124312345');
+	</script>
+</html>

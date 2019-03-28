@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+    <button id="test">按钮</button>
+    <script>
+        var test = document.getElementById('test');
+        test.onclick = function() {
+            window.open('./ceshi2.html?param1=name&param2=password', '_blank','width=960,height=650,menubar=no,toolbar=no,location=no,directories=no,status=no,scrollbars=yes,resizable=yes');
+        };
+        window.getContent = function(tx) {
+            document.getElementById('content').innerText = tx;
+        }
+    </script>
+</body>
+</html>

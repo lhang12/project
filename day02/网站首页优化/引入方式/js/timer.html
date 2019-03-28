@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var timeID;
+			function changeImg(){
+				alert("ceshiyixia")
+			}
+			function timer(){
+				timeID=window.setInterval("alert('changeImg')",1000);
+			}
+			function timeout(){
+				setTimeout("changeImg()")
+			}
+			function cancel(){
+				clearInterval(timeID);
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input type="button" value="开启" onclick="timer()" />
+		<input type="button" value="取消" onclick="cancel()"/>
+	</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="content">
+				<div class="top">
+					<p class="login-info">
+						<em></em>
+						<a href="login.html">注册</a>
+						<a href="login.html">登录</a>
+					</p>
+					<div class="quick-menu">
+						<a href="#">下载APP</a>
+						<a href="#" class="wx-guide">关注微信公众号
+							<span>
+								<img src="images/code-appQR.png" />
+							</span>
+						</a>
+						<a href="#">客服帮助</a>
+						<a class="person-info" href="#">个人中心</a>
+					</div>
+				</div>
+			</div>
+			<div class="top0">
+				<div class="top-1">
+					<ul>
+						<li class="logo-top"><img src="images/logo.png" alt="" /></li>
+						<li class="top2">
+							<form action="#" method="post">
+								<div class="top2-1">
+									<label>
+										<img src="images/f.png">
+									</label>
+									<input type="text" placeholder="请输入科室名、医生名" />
+								</div>
+								<input class="top2-2" type="submit" value="搜索" onclick="return UsrCheck()">
+							</form>
+							<div class="top2-3">
+								<p>
+									<a href="#">内科</a>
+									<a href="#">外科</a>
+									<a href="#">妇产科</a>
+									<a href="#">皮肤性病科</a>
+									<a href="#">骨科</a>
+								</p>
+							</div>
+						</li>
+						<li class="top-3"><img src="images/dh.png" alt="" /></li>
+					</ul>
+				</div>
+			</div>
+			<div class="zxys">
+				<div class="zxys1">
+					查询结果 <span>（科室 医生）</span>
+				</div>
+			</div>
+			<div class="tabox">
+				
+				<div class="bd">
+					<ul class="lh" >
+
+
+					</ul>
+					
+				</div>
+			</div>
+
+
+
+			<div class="ylzx  ">
+				<div class="yqlj">
+					<p>友情链接</p>
+					<ul>
+						<li><a href="http://www.baidu.com">百度 &nbsp;&nbsp;|</a></li>
+						<li><a href="https://hao.360.cn/">360浏览器 &nbsp;&nbsp;|</a></li>
+						<li><a href="https://www.sogou.com/">搜狗浏览器 &nbsp;&nbsp;|</a></li>
+						<li><a href="https://home.firefoxchina.cn/index.html?from_z.firefox.com.cn">火狐浏览器 &nbsp;&nbsp;|</a></li>
+						<li><a href="http://www.google.cn/">谷歌浏览器</a></li>
+					</ul>
+				</div>
+				<!--底部-开始-->
+				<div class="footer clear">
+					<div class="content">
+						<div class="logo-footer">
+							<a href="#">
+								<img src="images/logo-footer.png" />
+							</a>
+						</div>
+						<ul class="f-text">
+							<a href="#">关于我们</a>
+							<a href="#">加入我们</a>
+							<a href="#">联系我们</a>
+							<a href="#">友情链接</a>
+						</ul>
+						<ul class="f-text">
+							<a href="http://yueyang.leju.com/zhuanti/yyloushiditu/">新浪地图</a>
+							<a href="#">网站地图</a>
+							<a href="#">知识库</a>
+							<a href="#">版权声明</a>
+						</ul>
+						<div class="wx-code-footer">
+							<img src="images/code-wx.png" />
+							<em>扫描二维码关注微信公众号</em>
+						</div>
+					</div>
+					<div class="bottom clear">
+						<p>版权所有：陕西西安爱心科技有限公司 陕B2-20130007 (陕)-经营性-2014-0022 陕ICP备12034511号-2</p>
+					</div>
+				</div>
+				<!--底部-结束-->
+			</div>
+			<script type="text/javascript" src="./js/jquery.min.js"></script>
+			<script type="text/javascript" src="./js/jquery.im.ui.min.js"></script>
+			<script type="text/javascript" src="./js/jquery.im.index.js"></script>
+			<script type="text/javascript" src="./js/jquery.SuperSlide.js"></script>
+			<script type="text/javascript">
+		        $(function(){
+					$.ajax({
+						"url":"./json/consulter-neike.json",
+						"type":"get",
+						"datatype":"json",
+						"success":function(data){
+							$.each(data, function(i, data) {
+								// alert(i)
+									$(".lh  ").append("<li></li>")
+										// console.log(data.docterimg);
+										$(".lh  li:nth-child(" + (i+1) + ")").append("<p><img src=" + data.docterimg +
+											" alt=''/></p>")
+										$(".lh  li:nth-child(" + (i+1) + ")").append("<p>" + data.name + "</p>")
+										$(".lh  li:nth-child(" + (i+1) + ")").append("<p><span>" + data.position[0] +
+											"</span> <span>" + data.position[1] + "</span></p>")
+										$(".lh  li:nth-child(" + (i+1) + ")").append("<p><a href=''>评分" + data.grade + ((data.follow) ?
+											("</a> <a class='lha2' href=''>已关注</a></p>") : ("</a> <a class='lha' href=''>关注+</a></p>")))
+										$(".lh  li:nth-child(" + (i+1) + ")").append("<div class='lh1'>擅长：" + data.expertin +
+											"</div>")
+										$(".lh  li:nth-child(" + (i+1) + ")").append("<div class='lh2'></div>")
+										$(".lh  li:nth-child(" + (i+1) + ") .lh2").append((data.vidiostate) ? (
+												"<div class='lh2-1 lh2-2'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>未开通</span></div>") :
+											("<div class='lh2-1'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>￥15</span></div>"))
+										$(".lh  li:nth-child(" + (i+1) + ") .lh2").append((data.picstate) ? (
+											"<div class='lh2-1 lh2-2'><img src='images/sp-w.png' alt='视频'/> <h4>视频问诊</h4><span>未开通</span></div>"
+										) : ("<div class='lh2-1'><img src='images/sp1.png' alt=''/> <h4>视频问诊</h4><span>￥180</span></div>"))
+									
+								})
+								$(".lh li:last").after("<li><a href=''>  返回></a></li>")					
+							},
+						
+						"error":function(){
+							alert("错误")
+						}
+					})
+					
+				})
+		    </script>
+			<!-- <script type="text/javascript" src="./js/healthnews.js" > -->
+
+			
+			
+
+	</body>
+</html>

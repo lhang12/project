@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+			function showAd(){
+				$("#img2").slideDown(1000);
+				setTimeout("hideAd()",3000)
+			}
+			function hideAd(){
+				$("#img2").slideUp(1000);
+			}
+			$(function(){
+				setTimeout("showAd()",3000);
+			})
+		</script>
+	</head>
+	<body>
+		<img src="../Pic/products/f001a62f-a49d-4a4d-b56f-2b6908a0002c_g.jpg" width="100%" id="img2" style="display: none;" />
+	</body>
+</html>

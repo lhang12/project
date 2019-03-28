@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function move(){
+				var leftselect = document.getElementById("select1");
+				var leftoptions = leftselect.options;
+				var rightselect = document.getElementById("select2");
+				// alert(leftoptions.length)
+ 				for(var i=leftoptions.length - 1; i>=0;i--){
+ 					option1 = leftoptions[i];
+ 					if(option1.selected){
+ 						rightselect.appendChild(option1);
+ 					}
+ 				}
+			}
+			function moveAll(){
+				var leftselect = document.getElementById("select1");
+				var leftoptions = leftselect.options;
+				var rightselect = document.getElementById("select2");
+				// alert(leftoptions.length)
+				for(var i=0; i<leftoptions.length;i++){
+					option1 = leftoptions[i];
+					rightselect.appendChild(option1);
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table width="400px" border="1px" >
+			<tr>
+				<td>分类名称</td>
+				<td>手机数码</td>
+				
+			</tr>
+			<tr>
+				<td>分类描述</td>
+				<td>这里面都是手机数码</td>
+				
+			</tr>
+			<tr>
+				<td>分类商品</td>
+				<td>
+					<div style="float: left;">
+						<select multiple="multiple" id="select1" ondblclick="move()">
+							<option value ="">小米</option>
+							<option value ="">锤子</option>
+							<option value ="">华为</option>
+							<option value ="">oppo</option>
+							<option value ="">vivo</option>
+						</select>
+						<br />
+						<a href="#" onclick="move()" style="text-decoration: none;">&gt;&gt;</a><br />
+						<a href="#" onclick="moveAll()" style="text-decoration: none;">&gt;&gt;&gt;</a>
+					</div>
+					<div style="float: right;">
+						<select multiple="multiple" id="select2">
+							<option value ="">apple</option>
+							<option value ="">三星</option>
+							<option value ="">诺基亚</option>
+							<option value ="">htc</option>
+							<option value ="">摩托罗拉</option>
+						</select>
+						<br />
+						<a href="#" onclick="move()" style="text-decoration: none;">&gt;&gt;</a>
+						<br />
+						<a href="#" onclick="moveAll()" style="text-decoration: none;">&gt;&gt;&gt;</a>
+					</div>
+				</td>
+				
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" value="提交" />
+				</td>
+				
+				
+			</tr>
+		</table>
+	</body>
+</html>

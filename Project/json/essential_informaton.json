@@ -1,0 +1,22 @@
+{
+	"NM_Patient":"张晓优",
+	"Gender":1,
+	"DT_Birth":"1992-10-12",
+	"STATUS_Marital":1,
+	"officeAddress":"陕西省宝鸡市渭滨区公园路人民政府",
+	"Addr_Patient":"陕西省西安市未央区凤城二路海景国际",
+	"contacts":[
+		{
+		"contactName":"张笑xi",
+		"contactRelation":"父女",
+		"contactNum":"18220598633",
+		"contactAddress":"陕西省西安市未央区凤城二路海景国际"
+	},{
+		"contactName":"张笑ha",
+		"contactRelation":"父女",
+		"contactNum":"18220598633",
+		"contactAddress":"陕西省西安市未央区凤城二路海景国际"
+	}
+
+	]
+}

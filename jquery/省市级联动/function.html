@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var provinces = ["深圳市","东莞市","惠州市","广州市"];
+			function callBack(n){
+				console.log(n);
+			}
+			function bianli(arry,callBack){
+				for(var i = 0;i<arry.length;i++){
+					callBack(arry[i])
+				}
+			}
+			bianli(provinces,callBack);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

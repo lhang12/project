@@ -1,0 +1,25 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background:#000;
+    overflow:hidden;
+}
+#wrap{
+    width:133px;
+    height:200px;
+    margin: 200px auto;
+    position:relative;
+    transform-style:preserve-3d;
+    transform:perspective(900px) rotateX(-10deg) rotateY(0deg);
+}
+#wrap img{
+    position:absolute;
+    top:0;
+    left:0;
+    box-shadow: 0 0 10px #FFFFFF;
+    border-radius:10px;
+    box-reflect:below 8px linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.7) 100%);
+    -webkit-box-reflect:below 8px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.7) 100%);
+}

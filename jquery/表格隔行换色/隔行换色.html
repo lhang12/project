@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js">
+			
+		</script>
+		<script>
+			$(function(){
+				$("tr:even:gt(0)").css("background-color","palegreen")
+				$("tr:odd").css("background-color","yellow")
+				$("#checkAll").click(function(){
+					// $(".checkbox").
+					// this代表的是当前函数的所有者
+					// alert(this.checked);
+					// $("input[type='checkbox']:gt(0) ").prop("checked",this.checked);
+					$("tr input:gt(0) ").prop("checked",this.checked);
+				})
+				
+			})
+			
+			
+		</script>
+	</head>
+	<body>
+		<table width="800px" border="1px"height="300px">
+			<tr>
+				<td>
+					<input type="checkbox" id="checkAll" />
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					2
+				</td>
+				<td>
+					3
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" class="checkbox" />
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					2
+				</td>
+				<td>
+					3
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" class="checkbox" />
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					2
+				</td>
+				<td>
+					3
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" class="checkbox" />
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					2
+				</td>
+				<td>
+					3
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" class="checkbox" />
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					2
+				</td>
+				<td>
+					3
+				</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>
