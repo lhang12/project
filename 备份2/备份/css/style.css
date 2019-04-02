@@ -109,7 +109,7 @@ h2{font-family:"microsoft yahei";font-size:14px;}
 .li1 dd:last-child{ padding-bottom: 10px;}
 .a1:hover{ background-color: #fff;}
 .a1:hover .li1{visibility: visible;}
-.all-goods{position:absolute;top:43px;left:0;width:240px;height:431px;background:#377bee;border-bottom:1px solid #377bee;}
+.all-goods{position:absolute;top:43px;left:0;background:#377bee;border-bottom:1px solid #377bee;display:inline-block !important;}
 .all-goods .item{width:240px;height:46px;background:#377bee;border-bottom: 2px solid #377bee;} 
 .all-goods .btnone{border-top:none;}
 .all-goods .item .product{position:absolute;z-index:999;width:240px;}

@@ -1,0 +1,35 @@
+{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "idDoctor":1,
+      "nmDoctor":"张三"
+    },
+    {
+      "idDoctor":2,
+      "nmDoctor":"李1四"
+    },
+		{
+		  "idDoctor":2,
+		  "nmDoctor":"李2四"
+		},
+		{
+		  "idDoctor":2,
+		  "nmDoctor":"李3四"
+		},
+		{
+		  "idDoctor":2,
+		  "nmDoctor":"李4四"
+		},
+		{
+      "idDoctor":2,
+      "nmDoctor":"李5四"
+    },
+		{
+		  "idDoctor":2,
+		  "nmDoctor":"李6四"
+		}
+		
+  ]
+}

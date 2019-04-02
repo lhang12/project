@@ -1,0 +1,42 @@
+{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "idFirstDep":1,
+      "nmFirstDep":"内科"
+    },
+    {
+      "idFirstDep":2,
+      "nmFirstDep":"外科"
+    },
+	{
+	  "idFirstDep":2,
+	  "nmFirstDep":"妇产科"
+	},
+	{
+	  "idFirstDep":2,
+	  "nmFirstDep":"儿科"
+	},
+	{
+	  "idFirstDep":2,
+	  "nmFirstDep":"骨科"
+	},
+	{
+	  "idFirstDep":2,
+	  "nmFirstDep":"眼科"
+	},
+	{
+	  "idFirstDep":2,
+	  "nmFirstDep":"耳鼻喉科"
+	},
+	{
+	  "idFirstDep":2,
+	  "nmFirstDep":"口腔科"
+	},
+	{
+	  "idFirstDep":2,
+	  "nmFirstDep":"其他科室"
+	}
+  ]
+}

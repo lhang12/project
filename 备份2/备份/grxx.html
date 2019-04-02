@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/style3.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<!--顶部注册-开始-->
+			<div class="content">
+				<div class="top">
+					<p class="login-info">
+						<em></em>
+
+					</p>
+					<div class="quick-menu">
+						<a href="#">下载APP</a>
+
+						<a href="#" class="wx-guide">关注微信公众号
+							<span>
+								<img src="images/code-appQR.png" />
+							</span>
+						</a>
+						<a href="#">客服帮助</a>
+						<a class="person-info" href="#">个人中心</a>
+					</div>
+				</div>
+			</div>
+			<!--顶部注册-结束-->
+			<!--个人中心导航-开始-->
+			<div class="person-nav">
+				<div class="content">
+					<div class="nav-left">
+						<em>个人中心</em>
+					</div>
+					<div class="nav-right">
+						<a href="#">返回上一页</a>
+						<i class="line">|</i>
+						<a href="#">返回首页</a>
+					</div>
+				</div>
+			</div>
+			<!--个人中心导航-结束-->
+			<!--个人中心banner-开始-->
+			<div class="content">
+				<div class="banner-person">
+				</div>
+			</div>
+			<!--个人中心banner-结束-->
+			<!--内容区域-开始-->
+			<div class="content distance-top clear userContent">
+				<!--内容区域左边-开始-->
+				<div class="pers-tab">
+					<div class="pers-name">
+
+
+					</div>
+					<ul>
+						<li class="on">
+							<i class="icon-pers"></i>
+							<a href="#">个人信息</a>
+						</li>
+						<li>
+							<i class="icon-puerse"></i>
+							<a href="#">我的账户</a>
+						</li>
+						<li>
+							<i class="icon-record"></i>
+							<a href="#">问诊记录</a>
+						</li>
+						<li>
+							<i class="icon-Clinical"></i>
+							<a href="#">诊后随访</a>
+						</li>
+						<li>
+							<i class="icon-order"></i>
+							<a href="#">药品订单</a>
+						</li>
+						<li>
+							<i class="icon-doctor"></i>
+							<a href="#">关注医生</a>
+						</li>
+					</ul>
+				</div>
+				<!--内容区域右边-结束-->
+				<!--个人信息-开始-->
+				<div class="per-content">
+					<div class="patient-info">
+						<h3><em class="c-line"></em>患者基本信息</h3>
+						<div class="name-info">
+
+						</div>
+
+						<h4>联系人信息:</h4>
+						<table class="relative-table">
+							<tr class="tr-title">
+								<th class="th-n">姓名</th>
+								<th class="th-r">关系</th>
+								<th class="th-t">电话</th>
+								<th class="th-a">家庭住址</th>
+								<th class="th-w">操作</th>
+							</tr>
+
+
+						</table>
+					</div>
+					<div class="patient-info">
+						<h3><em class="c-line"></em>安全设置</h3>
+						<div class="Setting-content">
+							<p class="first-line">
+								<span>用户名</span>
+
+								<a class="btn-Modify" >修改</a>
+							</p>
+							<p class="first-line">
+								<span>手机账号</span>
+
+							</p>
+							<p class="first-line">
+								<span>邮箱账号</span>
+
+
+							</p>
+							<p class="first-line">
+								<span>登录密码</span>
+								<em>密码要求至少包含字母，符号或数字中的两项且长度超过6位，建议您经常修改密码，以保证帐号更加安全。</em>
+								<a class="btn-Modify" >修改</a>
+							</p>
+							<p class="first-line">
+								<span>微信绑定</span>
+								<img src="images/wx-pic.png" alt="" />
+								<a class="btn-Modify" href="#">绑定</a>
+							</p>
+						</div>
+					</div>
+					<div class="patient-info">
+						<h3><em class="c-line"></em>收货地址管理</h3>
+						<div class="headtips">
+							<em>新增收货地址</em>
+							<form>
+								<div class="form-item">
+									<label>地址信息：</label>
+									<select>
+										<option>北京</option>
+										<option>上海</option>
+										<option>陕西</option>
+										<option>成都</option>
+									</select>
+								</div>
+								<div class="form-item">
+									<label>详细地址：</label>
+									<textarea placeholder="请输入详细地址信息，如道路、门牌号、小区、楼栋号、单元等信息" required=""></textarea>
+								</div>
+								<div class="form-item">
+									<label>邮政编码：</label>
+									<input type="post" name="" id="1" placeholder="请选择填写邮政编码" />
+								</div>
+								<div class="form-item">
+									<label>收货人姓名：</label>
+									<input type="text" name="" id="2" placeholder="请输入收货人姓名" required="" />
+								</div>
+								<div class="form-item">
+									<label>手机号码：</label>
+									<input type="number" name="" id="3" placeholder="请输入收货人手机号码" required="" />
+								</div>
+								<div class="form-checkbox">
+									<input type="checkbox" name="" id="4" value="" />
+									<span>设为默认地址</span>
+								</div>
+								<div class="form-button">
+									<button type="submit">保存</button>
+								</div>
+							</form>
+							<em>收货地址列表</em>
+						</div>
+						<table class="adress-table">
+							<tr class="tr-title">
+								<th class="th-n">收货人</th>
+								<th class="th-r">所在地区</th>
+								<th class="th-t">详细地址</th>
+								<th class="th-w">电话/手机</th>
+								<th class="th-w">操作</th>
+								<th class="th-w"></th>
+							</tr>
+							
+
+
+						</table>
+					</div>
+				</div>
+				<!--个人信息-结束-->
+			</div>
+			<!--内容区域-结束-->
+			<!--底部-开始-->
+			<div class="footer clear">
+				<div class="content">
+					<div class="logo-footer">
+						<a href="#">
+							<img src="images/logo-footer.png" />
+						</a>
+					</div>
+					<ul class="f-text">
+						<a href="#">关于我们</a>
+						<a href="#">加入我们</a>
+						<a href="#">联系我们</a>
+						<a href="#">友情链接</a>
+					</ul>
+					<ul class="f-text">
+						<a href="#">新浪地图</a>
+						<a href="#">网站地图</a>
+						<a href="#">知识库</a>
+						<a href="#">版权声明</a>
+					</ul>
+					<div class="wx-code-footer">
+						<img src="images/code-wx.png" />
+						<em>扫描二维码关注微信公众号</em>
+					</div>
+				</div>
+				<div class="bottom clear">
+					<p>版权所有：陕西西安爱心科技有限公司 陕B2-20130007 (陕)-经营性-2014-0022 陕ICP备12034511号-2</p>
+				</div>
+			</div>
+			<!--底部-结束-->
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js">
+
+	</script>
+	<script>
+		let count = 0
+		let con = ""
+		let isNumBind
+		function texareaChange() {
+			$(".Setting-content p:nth-child(1) ").on("input propertychange","textarea",function(){
+				// alert("21")
+				// alert($(this).val())
+				con = $(this).val()
+			});
+		}
+		function  safesettingUsr() {
+
+			$(".Setting-content p:nth-child(1) .btn-Modify").click(function () {
+				// alert("123")
+				if(count===0){
+				let con = $(".Setting-content p:nth-child(1) .btn-Modify").prev("em").text()
+				// console.log("con")
+				$(this).prev("em").remove()
+				// console.log($(this).prev("em").text())
+				$(this).prev("span").after("<textarea>"+con+"</textarea>")
+				$(this).prev("textarea").css({"width":"446px","height":"50px","font-size":"30px",})
+
+					$(this).after("<a href='' class='btn-unbind'>确认</a>")
+					count=1
+				}
+
+				// $(".Setting-content p:nth-child(1) .btn-Modify").attr('disabled',"true")
+				$(".Setting-content p:nth-child(1) .btn-Modify").removeAttr('onclick')
+			})
+		}
+		function safesettingUsrCheck() {
+			let data = {
+				"NM_Nick":con
+			}
+			$(".Setting-content p:nth-child(1)").on("click",".btn-unbind",function () {
+				//textarea改变函数
+				// alert(con)
+				$.post(url,data,function () {
+					alert("修改成功")
+				},"json")
+				$(".Setting-content p:nth-child(1) .btn-Modify").prev("textarea").remove()
+				$(".Setting-content p:nth-child(1) .btn-Modify").prev("span").after("<em>"+con+"</em>")
+				$(this).remove()
+				count=0;
+				// alert("修改成功")
+			})
+		}
+		//安全设置用户名的修改
+		function safesettingUsrChange(){
+			texareaChange()
+			safesettingUsr()
+			safesettingUsrCheck()
+		}
+		//修改密码函数
+		// function passwordChange(){
+		// 	$(".Setting-content p:nth-child(4) .btn-Modify").click(function () {
+		// 		alert("1")
+		//
+		// 		$(this).prev("em").remove()
+		// 		$(this).prev("span").remove()
+		// 		$(this).parent("p").prepend("<div>请重新输入密码：<textarea></textarea></div>")
+		// 		$(this).parent("p").prepend("<div>请确认密码&emsp;&emsp;：<textarea></textarea></div>")
+		// 	})
+		// }
+		//安全设置各个信息的加载
+
+		//安全设置，手机账号
+
+		//安全设置 ，手机账号 解绑
+		function numUnbind() {
+			let data ={
+				"isBindNum":false
+			}
+		$(".Setting-content p:nth-child(2) .btn-unbind").click(function () {
+			$.post(url,data,function () {
+				alert("解绑成功")
+			},"json")
+		})
+		}
+		//安全设置 手机账号 绑定或更换
+		function numChange() {
+			if(isNumBind){
+				$(".Setting-content p:nth-child(2) .btn-Modify").click(function () {
+					$.post(url,data,function () {
+						alert("解绑成功")
+					},"json")
+				})
+
+			}else{
+				$(".Setting-content p:nth-child(2) .btn-Modify").click(function () {
+					$.post(url,data,function () {
+						alert("解绑成功")
+					},"json")
+				})
+			}
+
+		}
+		function safesetting_NumSetting(){
+			
+		}
+		function EmaillUbind() {
+			let data ={
+				"isBindEmial":false
+			}
+			$(".Setting-content p:nth-child(3) .btn-unbind").click(function () {
+
+				$.post(url,data,function () {
+					alert("解绑成功")
+				},"json")
+			})
+		}
+		//安全设置
+		function safeSetting(){
+			$.get("./json/presentation.json",function(response,staus){
+				if(response.code == 200){
+					$.each(response.result,function(i,data){
+						$(".first-line:nth-child(1) span").after("<em>"+data.NM_Nick+"</em>")
+						//判断是否绑定手机号，并进行按键设置
+						if(data.isBindNum){
+							isNumBind = isNumBind
+							let Num=""+data.userNum
+							$(".first-line:nth-child(2) span").after("<a class='btn-unbind' href='#'>解绑</a>")
+							$(".first-line:nth-child(2) span").after("<a class='btn-Modify' href='#'>更换</a>")
+							$(".first-line:nth-child(2) span").after("<em>可以使用手机"+Num.substring(0,3)+"******"+Num.substring(9,12)+"马上登录</em>")//?????????????????????????????添加手机号
+						}else{
+							$(".first-line:nth-child(2) span").after("<a class='btn-Modify' href='#'>绑定</a>")
+						}
+						//判断书否绑定邮箱，并进行按键设置
+						if(data.isBindEmial){
+							$(".first-line:nth-child(3) span").after("<a class='btn-unbind' href='#'>解绑</a>")
+							$(".first-line:nth-child(3) span").after("<a class='btn-Modify' href='#'>更换</a>")
+							$(".first-line:nth-child(3) span").after("<em>已绑定邮箱</em>")
+						}else{
+							$(".first-line:nth-child(3) span").after("<a class='btn-Modify' href='#'>绑定</a>")
+							$(".first-line:nth-child(3) span").after("<em>未绑定邮箱，请绑定</em>")
+						}
+
+
+					})
+				}else{
+					alert(response.code)
+				}
+			},"json")
+
+		}
+		function deliveryList(){
+			$.get("./json/收货地址列表.json",function(response,status){
+				if(response.code==200){
+					$.each(response.result,function(i,data){
+						// alert(i)
+						$(".adress-table ").append("<tr class='tr-content'></tr>")
+						$(".adress-table .tr-content:nth-child("+(i+2)+")").append("<td><div class='wraaper-table'>"+data.deliverName+"</div></td>")
+						$(".adress-table .tr-content:nth-child("+(i+2)+")").append("<td><div class='wraaper-table'><span>"+data.deliverAddrs+"</span></div></td>")
+						$(".adress-table .tr-content:nth-child("+(i+2)+")").append("<td><div class='wraaper-table'>"+data.deliverConcrete+"</div></td>")
+						$(".adress-table .tr-content:nth-child("+(i+2)+")").append("<td><div class='wraaper-table'>"+data.user_Num+"</div></td>")
+						$(".adress-table .tr-content:nth-child("+(i+2)+")").append("<td><div class='wraaper-table'><a class='alter' href=''>修改</a><span class='delete'>删除</span></div></td>")
+						$(".adress-table .tr-content:nth-child("+(i+2)+")").append("<td><div class='wraaper-table'>"+(data.defaultJdg==1?"<span class='mo-adress'>默认地址</span>":"<a  href='#'>设为默认地址</a>")+"</div></td>")
+					})
+
+				}
+			},'json')
+		}
+		function shouhuodizhi() {
+			var addr = $(".headtips form .form-item:nth-child(1) select option:selected").text()
+			var addrC = $(".headtips form .form-item:nth-child(2) textarea").val()
+			var postalCode = $(".headtips form .form-item:nth-child(3) input[type='post']").val()
+			var name= $(".headtips .form-item:nth-child(4) input[type='text']").val()
+			var phoneNum = $(".headtips .form-item:nth-child(5) input[type='number']").val()
+			var flag = $(".headtips .form-checkbox input[type='checkbox']").get(0).checked
+			// var g = $(".headtips .form-button button[type='submit']")
+			let data= {
+				"address":addr,
+				"addrC" :addrC,
+				"postalCode":postalCode,
+				"name":name,
+				"phoneNum":phoneNum,
+				"flag":flag
+			}
+			$.post(url,data,function () {
+				alert("保存成功");
+
+			},"json")
+			// alert(a)
+			// alert(b)
+			// alert(c)
+			// alert(d)
+			// alert(e)
+			// alert(f)
+			// alert(g)
+		}
+		function jibenxinxi(){
+			$.get("./json/essential_informaton.json", function(response, staus) {
+				// alert(response)
+				$(".name-info").append("<em>姓名：<span>" + response.NM_Patient + "</span></em>");
+				$(".name-info").append("<em>性别：<span>" + (response.Gender == 0 ? "男" : "女") + "</span></em>");
+				$(".name-info").append("<em>出生日期：<span>" + response.DT_Birth + "</span></em>");
+				$(".name-info").append("<em>婚姻状况：<span>" + (response.STATUS_Marital == 0 ? "未婚" : "已婚") + "</span></em>");
+				$(".name-info").after("<p>工作单位：<span>" + response.officeAddress + "</span></p>")
+				$(".name-info").after("<p>常住地址：<span>" + response.Addr_Patient + "</span></p>")
+				$.each(response.contacts, function(i, data) {
+
+					// alert(i)
+					$(".relative-table").append("<tr class='tr-content'></tr>")
+					$(".relative-table .tr-content:nth-child(" + (i + 2) + ")").append("<td>" + data.contactName + "</td>")
+					$(".relative-table .tr-content:nth-child(" + (i + 2) + ")").append("<td>" + data.contactRelation + "</td>")
+					$(".relative-table .tr-content:nth-child(" + (i + 2) + ")").append("<td>" + data.contactNum + "</td>")
+					$(".relative-table .tr-content:nth-child(" + (i + 2) + ")").append("<td>" + data.contactAddress + "</td>")
+					$(".relative-table .tr-content:nth-child(" + (i + 2) + ")").append("<td><span>删除</span></td>")
+
+				})
+
+			}, "json")
+		}
+		//删除联系人信息
+		function shanchu(){
+			$('body').on('click', '.relative-table tr td span', function() {
+				// alert("123");
+				$(this).parent().parent().remove();
+				alert('删除成功')
+				$.post(url, data, function() {
+					alert('删除成功')
+				}, 'json')
+			})
+		}
+		//加载联系人信息
+		function infoLoad(){
+			if (true) {
+				$.get('./json/presentation.json', function(response, status) {
+					// alert(response.presentImg)
+					if (response.code==200){
+						$.each(response.result,function(i,data){
+							$(".userContent .pers-tab .pers-name").append("<img src=" + data.Head_Portrait + " />")
+							$(".userContent .pers-tab .pers-name").append("<h3>" + data.NM_Nick + "</h3>")
+						})
+					} else{
+						alert(response.code)
+					}
+				}, "json")
+
+			}
+		}
+		//表单信息提交
+		function listPost(){
+			$(".headtips .form-button button[type='submit']").click(function(){
+				shouhuodizhi();
+			})
+		}
+		$(function() {
+			// texareaChange()
+			//安全设置里用户名修改
+			// safesettingUsr();
+			//确认
+			// safesettingUsrCheck()
+			safesettingUsrChange()
+			//修改密码
+			// passwordChange()
+			//保存设置栏
+			safeSetting()
+			// 收货地址列表;页面开始ajax自动获取
+			deliveryList()
+			// 打开页面自动获取用户信息
+			jibenxinxi()
+			//删除信息并提示
+			shanchu()
+			//信息加载
+			infoLoad()
+			//表单信息提交
+			listPost()
+
+		})
+	</script>
+</html>

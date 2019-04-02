@@ -11,8 +11,7 @@
 				<div class="top">
 					<p class="login-info">
 						<em></em>
-						<a href="login.html">注册</a>
-						<a href="login.html">登录</a>
+
 					</p>
 					<div class="quick-menu">
 						<a href="#">下载APP</a>
@@ -22,7 +21,7 @@
 							</span>
 						</a>
 						<a href="#">客服帮助</a>
-						<a class="person-info" href="#">个人中心</a>
+						<a class="person-info" href="grxx.html">个人中心</a>
 					</div>
 				</div>
 			</div>
@@ -38,7 +37,7 @@
 									</label>
 									<input type="text" placeholder="请输入科室名、医生名" />
 								</div>
-								<input class="top2-2" type="submit" value="搜索" onclick="return UsrCheck()">
+								<input class="top2-2" type="submit" value="搜索" onclick="return isSearchResource()">
 							</form>
 							<div class="top2-3">
 <!--								-->
@@ -76,21 +75,12 @@
 								</dl>
 							</li>
 							<li><a href="">医生信息</a></li>
-							<li><a href="">医疗资讯</a></li>
+							<li><a href="ylzx.html">医疗资讯</a></li>
 						</ul>
 					</div>
 				</div>
 				<div id="bannerShow" class="banner2013">
 					<div class="sideShow">
-						<div style="z-index: 1; display: block;">
-							<a href=""><img src="images/banner-1.png"></a>
-						</div>
-						<div style="z-index: 1; display: block;">
-							<a href=""><img src="images/login-bg.png"></a>
-						</div>
-						<div style="z-index: 1; display: block;">
-							<a href=""><img src="images/pcqq66.jpg"></a>
-						</div>
 					</div>
 					<div class="circle">
 						<li></li>
@@ -398,718 +388,586 @@
 			<!-- <script type="text/javascript" src="./js/healthnews.js" > -->
 
 
-			<script type="text/javascript">
-				function isChinaName(name) {
-					var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
-					return pattern.test(name);
-				}
 
-				function isPhoneNo(phone) {
-					var pattern = /^1[34578]\d{9}$/;
-					return pattern.test(phone);
-				}
-
-				function isCardNo(card) {
-					var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
-					return pattern.test(card);
-				}
-
-				// 				function userName(inputid, spanid) {
-				// 					$(inputid).blur(function() {
-				// 						if ($.trim($(inputid).val()).length == 0) {
-				// 							alert("× 名称没有输入");
-				// 						} else {
-				// 							if (isChinaName($.trim($(inputid).val())) == false) {
-				// 								alert("× 名称不合法");
-				// 							}
-				// 						}
-				// 					});
-				// 
-				// 
-				// 				};
-				// 
-				// 				function userID(inputid, spanid) {
-				// 					$(inputid).blur(function() {
-				// 						if ($.trim($(inputid).val()).length == 0) {
-				// 							alert("× 身份证号码没有输入");
-				// 						} else {
-				// 							if (isCardNo($.trim($(inputid).val())) == false) {
-				// 								alert("× 身份证号不正确");
-				// 							}
-				// 						}
-				// 					});
-				// 
-				// 				};
-				// 
-				// 				function userTel(inputid, spanid) {
-				// 					$(inputid).blur(function() {
-				// 						if ($.trim($(inputid).val()).length == 0) {
-				// 							alert("× 手机号没有输入");
-				// 						} else {
-				// 							if (isPhoneNo($.trim($(inputid).val())) == false) {
-				// 								alert("× 手机号码不正确");
-				// 							}
-				// 						}
-				// 
-				// 					});
-				// 				};
-
-
-				function ghCheck() {
-					var a = $(".index-dl select:nth-child(1)").val();
-					var b = $(".index-dl select:nth-child(2)").val();
-					var c = $(".index-dl select:nth-child(3)").val();
-					var d = $(".index-dl input:nth-child(4)").val();
-					var e = $(".index-dl input:nth-child(5)").val();
-					var f = $(".index-dl input:nth-child(6)").val();
-					// 					alert($(".index-dl select:nth-child(1)").val())
-					// 					alert($(".index-dl select:nth-child(2)").val())
-					// 					alert($(".index-dl input:nth-child(3)").val())
-					// 					alert($(".index-dl input:nth-child(4)").val())
-					// 					alert($(".index-dl input:nth-child(5)").val())
-					// 					// 					alert(a)
-					// 					alert(b)
-					// 					alert(c)
-					// 					alert(d)
-					// 					alert(e)
-					if (a == "请选择科室" || b == "请选择详细科室" || c == "请选择医生" || d == "" || e == "" || f == "") {
-
-						alert("请把信息填写完整")
-						return false
-					}
-					if (a != "请选择科室"&&b!="请选择详细科室" && c != "请选择医生" && d != "" && e != "" && f != "") {
-
-						if (isChinaName($.trim($($(".index-dl input:nth-child(4)")).val())) == false) {
-
-							$(".index-dl input:nth-child(4)").css("border", "1px solid red")
-							alert("× 名称不合法");
-							return false
-						} else {
-							$(".index-dl input:nth-child(4)").css("border", "")
-						}
-
-						if (isCardNo($.trim($($(".index-dl input:nth-child(5)")).val())) == false) {
-							$(".index-dl form input:nth-child(5)").css("border", "1px solid red");
-							alert("× 身份证号不正确");
-
-							return false;
-						} else {
-							$(".index-dl input:nth-child(5)").css("border", "")
-							// alert("身份证正确")
-						}
-
-						if (isPhoneNo($.trim($($(".index-dl input:nth-child(6)")).val())) == false) {
-
-							$(".index-dl input:nth-child(6)").css("border", "1px solid red")
-							alert("× 手机号码不正确");
-							return false
-						} else {
-							$(".index-dl input:nth-child(6)").css("border", "");
-							// alert("手机号正确")
-						}
-						// 						alert(a)
-						// 						alert(b)
-						// 						alert(c)
-						// 						alert(d)
-						// 						alert(e)
-						// 						$.session.set('name','tom');
-						// 						$.session.set('IDcard','12312414');
-						// 						$.session.set('phone','124312345');
-					}
-
-					$.session.set('office', a);
-					$.session.set('office_concrete', b);
-					$.session.set('docter', c);
-					$.session.set('name', d);
-					$.session.set('IDcard', e);
-					$.session.set('phone', f);
-
-				}
-
-				function UsrCheck() {
-					// return  true;
-					// return true
-					//alert($(".top2-1 input").val());
-					var flag = false;
-					$.ajax({
-						"url": "/index/search",
-						"type": "post",
-						"async": false,
-						"data": {
-							"searchInfo": $(".top2-1 input").val(),
-						},
-						"success": function(data) {
-							flag = data.flag;
-						},
-						"error": function() {
-							alert("请重新搜索");
-						}
-					})
-					return flag
-				}
-
-
-				// 资讯
-				function medicalInf() {
-					// alert("ceshi")
-					$.get("./json/zixun.json", function(response, staus) {
-						// alert("ceshi")
-						// alert(response.code+""+response.msg)
-						if (response.code == 200 && response.msg == "success") {
-							$.each(response.result, function(i, data) {
-
-								if (data.TYPE_Article == 0) {
-
-									$.each(data.content, function(i, con) {
-										// 										$(".hotpnt").append("<p class='ylzx1-1'><span>热点关注</span> <a href=''>查看更多></a></p>")
-										// 										$(".hotpnt").append("<div class='ylzx1-2'><img src="+con.TITLE_Pic+" alt=''/></div>")
-										// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
-										if (i == 1) {
-											$(".hotpnt").append("<p class='ylzx1-1'><span>热点关注</span> <a href=''>查看更多></a></p>")
-											$(".hotpnt").append("<div class='ylzx1-2'><img src=" + con.TITLE_Pic + " alt=''/></div>")
-											// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-											$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
-											$(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article +
-												"...</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										} else if (con.flag == 0) {
-											$(".hotpnt .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/new.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 1) {
-											$(".hotpnt .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/hot.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 2) {
-											$(".hotpnt .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										}
-
-										// $(".hotpnt").append("");
-
-									})
-								} else if (data.TYPE_Article == 1) {
-									// alert(data.TYPE_Article)
-									$.each(data.content, function(i, con) {
-										// 										$(".hlthcom").append("<p class='ylzx1-1'><span>健康常识</span> <a href=''>查看更多></a></p>")
-										// 										$(".hlthcom").append("<div class='ylzx1-2'><img src=" + con.TITLE_Pic+ " alt=''/></div>")
-										// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
-										if (i == 1) {
-											$(".hlthcom").append("<p class='ylzx1-1'><span>健康常识</span> <a href=''>查看更多></a></p>")
-											$(".hlthcom").append("<div class='ylzx1-2'><img src=" + con.TITLE_Pic + " alt=''/></div>")
-											// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-											$(".hlthcom").append("<div class='ylzx2'><ul></ul></div>")
-											$(".hlthcom .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article + "..." +
-												"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										} else if (con.flag == 0) {
-											$(".hlthcom .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/new.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 1) {
-											$(".hlthcom .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/hot.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 2) {
-											$(".hlthcom .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										}
-
-										// $(".hotpnt").append("");
-
-									})
-
-
-
-								} else if (data.TYPE_Article == 2) {
-									$.each(data.content, function(i, con) {
-										// 										$(".hlthcare").append("<p class='ylzx1-1'><span>养生保健</span> <a href=''>查看更多></a></p>")
-										// 										$(".hlthcare").append("<div class='ylzx1-2'><img src=" + con.TITLE_Pic+ " alt=''/></div>")
-										// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
-										if (i == 1) {
-											$(".hlthcare").append("<p class='ylzx1-1'><span>养生保健</span> <a href=''>查看更多></a></p>")
-											$(".hlthcare").append("<div class='ylzx1-2'><img src=" + con.TITLE_Pic + " alt=''/></div>")
-											// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-											$(".hlthcare").append("<div class='ylzx2'><ul></ul></div>")
-											$(".hlthcare .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article + "..." +
-												"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										} else if (con.flag == 0) {
-											$(".hlthcare .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/new.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 1) {
-											$(".hlthcare .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/hot.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 2) {
-											$(".hlthcare .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										}
-
-
-
-									})
-
-
-								} else if (data.TYPE_Article == 3) {
-									$.each(data.content, function(i, con) {
-										// 										$(".pychologhlth").append("<p class='ylzx1-1'><span>心理健康</span> <a href=''>查看更多></a></p>")
-										// 										$(".pychologhlth").append("<div class='ylzx1-2'><img src=" + con.TITLE_Pic+ " alt=''/></div>")
-										// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
-										if (i == 1) {
-											$(".pychologhlth").append("<p class='ylzx1-1'><span>心理健康</span> <a href=''>查看更多></a></p>")
-											$(".pychologhlth").append("<div class='ylzx1-2'><img src=" + con.TITLE_Pic + " alt=''/></div>")
-											// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article+"..."+"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-											$(".pychologhlth").append("<div class='ylzx2'><ul></ul></div>")
-											$(".pychologhlth .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.TITLE_Article + "..." +
-												"</h4><p>" + con.Content_Article.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
-										} else if (con.flag == 0) {
-											$(".pychologhlth .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/new.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 1) {
-											$(".pychologhlth .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='./images/hot.png' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										} else if (con.flag == 2) {
-											$(".pychologhlth .ylzx2 ul").append("<li><a href=" + con.URL_ARTICAL + ">" + con.TITLE_Article +
-												"</a> <img src='' alt=''/><span>" + con.TM_CREATE + "</span></li>")
-										}
-
-
-
-									})
-
-
-								}
-							})
-						}
-					}, "json")
-				}
-
-
-
-				function docterInf(j, datalink) {
-					
-					$.ajax({
-						"url": datalink,
-						"type": "get",
-						"datatype": "json",
-						"success": function(data) {
-                            if (data.code==200) {
-							$.each(data.result, function(i, data1) {
-                                // console.log(data.Head_Portrait);
-                                if(i<7){
-
-									// console.log(data1.Head_Portrait);
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><img src=" + data1.Head_Portrait +
-										" alt=''/></p>")
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p>" + data1.NM_Doctor + "</p>")
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><span>" + data1.second_department_name +
-										"</span> <span>" + data1.Job_Infor + "</span></p>")
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><a href=''>评分" + data1.Score + ((
-											data1.followed==0) ?
-										("</a> <a class='lha2' href=''>已关注</a></p>") : ("</a> <a class='lha' href=''>关注+</a></p>")))
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<div class='lh1'>擅长：" + data1.Field_Main +
-										"</div>")
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<div class='lh2'></div>")
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ") .lh2").append((data1.vidiostate) ? (
-											"<div class='lh2-1 lh2-2'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>未开通</span></div>") :
-										("<div class='lh2-1'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>￥15</span></div>"))
-									$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ") .lh2").append((data1.picstate) ? (
-										"<div class='lh2-1 lh2-2'><img src='images/sp-w.png' alt='视频'/> <h4>视频问诊</h4><span>未开通</span></div>"
-									) : ("<div class='lh2-1'><img src='images/sp1.png' alt=''/> <h4>视频问诊</h4><span>￥180</span></div>"))
-                                }
-							})
-                            }
-						},
-						"error": function() {
-
-						}
-					})
-				}
-				// 科室分类
-				function keshifenlei() {
-				    $.get("./json/keshifenlei.json",function(response,status){
-				    	let tubiao ="tubiao"
-
-				        // alert(response)
-				        if(response.code==200){
-				            $.each(response.result,function(i,data){
-								switch (data.first_Department_Name) {
-									case "内科":
-										tubiao="tubiao"
-										break;
-									case "外科":
-										tubiao="tubiao1"
-										break;
-									case "妇产科":
-										tubiao="tubiao2"
-										break;
-									case "儿科":
-										tubiao="tubiao3"
-										break;
-									case "骨科":
-										tubiao="tubiao4"
-										break;
-									case "眼科":
-										tubiao="tubiao5"
-										break;
-									case "耳鼻喉科":
-										tubiao="tubiao6"
-										break;
-									case "口腔科":
-										tubiao="tubiao7"
-										break;
-									default:
-										tubiao="tubiao8"
-										break;
-
-								}
-				                // console.log(i)
-                                $(".all-goods ").append("<div class='item btnone'></div>")
-                                $(".all-goods .item:nth-child("+(i+1)+")").append("<div class='product "+tubiao+"'></div>")
-                                $(".all-goods .item:nth-child("+(i+1)+")").append("<div class='product-wrap pos01'></div>")
-                                $(".all-goods .item:nth-child("+(i+1)+") .product").append("<h3></h3>")
-								// console.log(data.first_Department_Name)
-                                $(".all-goods .item:nth-child("+(i+1)+") .product h3").append("<a href='#'><i></i>"+data.first_Department_Name+"</a>")
-								// console.log($(".all-goods .item:nth-child("+(i+1)+") .product h3 a"))
-                                $.each(data.content,function(j,data1){
-                                    $(".all-goods .item:nth-child("+(i+1)+") .product-wrap").append("<div class='index-nav'></div>")
-									// console.log(data1.second_Department_Name)
-									// console.log(i,j)
-                                    $(".all-goods .item:nth-child("+(i+1)+") .product-wrap .index-nav:nth-child("+(j+1)+")").append("<h3>"+data1.second_Department_Name+"常见疾病</h3>")
-                                    $(".all-goods .item:nth-child("+(i+1)+") .product-wrap .index-nav:nth-child("+(j+1)+")").append("<ul class='disease-cat'></ul>")
-                                    $.each(data1.common_Disease,function(k,data2){
-                                    	// console.log(data2.NM_Disease)
-                                        $(".all-goods .item:nth-child("+(i+1)+") .product-wrap .index-nav:nth-child("+(j+1)+") .disease-cat").append("<a href='#'>"+data2.NM_Disease+"</a>")
-										if(k<1&&j<2){
-
-											$(".all-goods .item:nth-child("+(i+1)+") .product h3").append("<a href='#'>"+data2.NM_Disease+"</a>")
-											// $(".all-goods .item:nth-child("+(i+1)+") .product h3").append("<p><p/>")
-										}
-
-                                    })
-                                })
-
-
-                            })
-
-                        }else{
-				            alert("请重新加载")
-                        }
-
-                    },"json")
-				}
-				//鼠标悬停
-			// function mouseoverEvent(){
-			//
-			// }
-			//鼠标移入
-			function mouseoverEvent(){
-				$("body").on('mouseover','.btnone',function(){
-					// alert("test")
-					$(this).addClass("active")
-					$(".active .product-wrap").css("display","block")
-				} );
-			}
-			//鼠标移出
-			function mouseoutEvent(){
-				$("body").on('mouseout','.btnone',function(){
-					// alert("test")
-					$(this).removeClass("active")
-					$(this).find(".product-wrap").css("display","none")
-				} );
-			}
-			function mouseEvent(){
-				mouseoverEvent();
-				mouseoutEvent();
-			}
-
-				//
-				$(function() {
-					mouseEvent();
-
-					// 					$.session.set('name','tom');
-					// 					$.session.set('IDcard','12312414');
-					// 					$.session.set('phone','124312345');
-					// 显示全部科室
-					var flag1 = true;
-					$(".tabox .hd p a").click(function() {
-
-						if (flag1) {
-							$(".tabox .hd .hide").attr("class", "show");
-							$(".tabox .hd p a").text("<部分科室");
-							flag1 = !flag1;
-							// alert(flag1);
-						} else {
-
-							$(".tabox .hd .show").attr("class", "hide");
-							$(".tabox .hd p a").text("全部科室>");
-							flag1 = !flag1;
-							// alert(flag1);
-						}
-					})
-
-
-					// 科室分类
-					keshifenlei();
-
-					// keshifenlei("./json/disease.json", "waike");
-					// keshifenlei("./json/disease.json", "fuchanke");
-					// // keshifenlei( "./json/disease.json","earke" );
-					// keshifenlei("./json/disease.json", "childke");
-					// keshifenlei("./json/disease.json", "guke");
-					// keshifenlei("./json/disease.json", "yanke");
-					// keshifenlei("./json/disease.json", "erbihouke");
-					// keshifenlei("./json/disease.json", "kouqiangke");
-					// keshifenlei("./json/disease.json", "qitakeshi");
-
-
-
-
-					//咨询医生关注
-
-					// 					$(".lh li p a .lha").click(function(){
-					// // 						$.ajax({
-					// // 							"url":"132",
-					// // 							"type":"post",
-					// // 							"data":true,
-					// // 							"datatype":"json",
-					// // 							"success":function(data){
-					// // 								alert("关注成功")
-					// // 							},
-					// // 							"error":function(){
-					// // 								alert("关注失败")
-					// // 							}
-					// 						// })
-					// // 													
-					// 						$(this).attr("class","lha2");
-					// 						$(this).text("已关注")
-					// 					})
-					// $(".lh li p a .lha2").click(function(){
-					// 						$.ajax({
-					// 							"url":"132",
-					// 							"type":"post",
-					// 							"data":true,
-					// 							"datatype":"json",
-					// 							"success":function(data){
-					// 								alert("取消成功")
-					// 							},
-					// 							"error":function(){
-					// 								alert("取消失败")
-					// 							}
-					// 						$(this).attr("class","lha");
-					// 						$(this).text("关注+")
-					// 					})
-
-					//医疗资讯
-					// 					zixun(".hotpnt", "热点关注");
-					// 					zixun(".hlthcom", "健康常识");
-					// 					zixun(".hlthcare", "养生保健");
-					// 					zixun(".pychologhlth", "心理健康");
-					medicalInf()
-					// 						zixun( classna,con1);
-					// 						zixun( classna,con1);
-					// 						zixun( classna,con1);
-
-					// 医生简介
-
-					docterInf(2, "./json/consulter-neike.json");
-					docterInf(1, "./json/consulter-neike.json");
-					docterInf(3, "./json/consulter-neike.json");
-					docterInf(4, "./json/consulter-neike.json");
-					docterInf(5, "./json/consulter-neike.json");
-					docterInf(6, "./json/consulter-neike.json");
-					docterInf(7, "./json/consulter-neike.json");
-
-					// 					$.ajax({
-					// 						"url": "./json/consulter-neike.json",
-					// 						"type": "get",
-					// 						"datatype": "json",
-					// 						"success": function(data) {
-					// 
-					// 							$.each(data, function(i, data) {
-					// 								if (i < 7) {
-					// 									// console.log(data.docterimg);
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ")").append("<p><img src=" + data.docterimg +
-					// 										" alt=''/></p>")
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ")").append("<p>" + data.name + "</p>")
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ")").append("<p><span>" + data.position[0] +
-					// 										"</span> <span>" + data.position[1] + "</span></p>")
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ")").append("<p><a href=''>评分" + data.grade + ((data.follow) ?
-					// 										("</a> <a class='lha2' href=''>已关注</a></p>") : ("</a> <a class='lha' href=''>关注+</a></p>")))
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ")").append("<div class='lh1'>擅长：" + data.expertin +
-					// 										"</div>")
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ")").append("<div class='lh2'></div>")
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ") .lh2").append((data.vidiostate) ? (
-					// 											"<div class='lh2-1 lh2-2'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>未开通</span></div>") :
-					// 										("<div class='lh2-1'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>￥15</span></div>"))
-					// 									$(".lh:nth-child(1) li:nth-child(" + (i + 1) + ") .lh2").append((data.picstate) ? (
-					// 										"<div class='lh2-1 lh2-2'><img src='images/sp-w.png' alt='视频'/> <h4>视频问诊</h4><span>未开通</span></div>"
-					// 									) : ("<div class='lh2-1'><img src='images/sp1.png' alt=''/> <h4>视频问诊</h4><span>￥180</span></div>"))
-					// 								}
-					// 							})
-					// 							
-					// 						},
-					// 						"error": function() {
-					// 
-					// 						}
-					// 					})
-					// 
-
-
-
-					//读取科室和医生菜单栏
-					$.ajax({
-						"url": "./json/office_docter.json",
-						"type": "get",
-						"async": true,
-						"datatype": "json",
-						"success": function(data) {
-							// console.log(data)
-							$.each(data, function(data) {
-								// console.log(data)
-								$(".index-dl form select:nth-child(1)").append("<option>" + data + "</option>")
-
-								// $(".index-dl form select:nth-child(2)").append("<option>"+data+"</option>")
-							})
-							// console.log(data)
-							$.each(data, function(data1) {
-								// console.log(data)
-								$.each(data[data1], function(i, data2) {
-									$(".index-dl form select:nth-child(2)").append("<option>" + data2 + "</option>")
-								})
-
-
-								// $(".index-dl form select:nth-child(2)").append("<option>"+data+"</option>")
-							})
-						},
-						"error": function() {
-							console.log("读取失败")
-						}
-					})
-					$.ajax({
-						"url": "./json/office_docter.2.json",
-						"type": "get",
-						// "async": true,
-						"datatype": "json",
-						"success": function(data) {
-							// console.log(data)
-							// 							$.each(data, function(data) {
-							// 								// console.log(data)
-							// 								$(".index-dl form select:nth-child(1)").append("<option>" + data + "</option>")
-							// 
-							// 								// $(".index-dl form select:nth-child(2)").append("<option>"+data+"</option>")
-							// 							})
-							// console.log(data)
-							$.each(data, function(data1) {
-								// console.log(data1)
-								$.each(data[data1], function(i, data2) {
-
-									$(".index-dl form select:nth-child(3)").append("<option>" + data2 + "</option>")
-								})
-
-
-								// $(".index-dl form select:nth-child(2)").append("<option>"+data+"</option>")
-							})
-						},
-						"error": function() {
-							console.log("读取失败")
-						}
-					})
-
-					$(".index-dl form select:nth-child(1)").change(function() {
-						$(".index-dl form select:nth-child(2)").empty();
-						$(".index-dl form select:nth-child(2)").append("<option>请选择详细科室</option>")
-						$.ajax({
-							"url": "./json/office_docter.json",
-							"type": "get",
-							"async": true,
-							"datatype": "json",
-							"success": function(data) {
-								var con = $(".index-dl form select:nth-child(1) option:selected").val()
-								// console.log(data)
-
-								// console.log(data)
-								$.each(data[con], function(i, data1) {
-									// console.log(data)
-									// alert(data[con][i])
-
-									$(".index-dl form select:nth-child(2)").append("<option>" + data[con][i] + "</option>")
-
-
-
-									// $(".index-dl form select:nth-child(2)").append("<option>"+data+"</option>")
-								})
-							},
-							"error": function() {
-								console.log("读取失败")
-							}
-						})
-					})
-					$(".index-dl form select:nth-child(2)").change(function() {
-						$(".index-dl form select:nth-child(3)").empty();
-						$(".index-dl form select:nth-child(3)").append("<option>请选择医生</option>")
-						$.ajax({
-							"url": "./json/office_docter.2.json",
-							"type": "get",
-							"async": true,
-							"datatype": "json",
-							"success": function(data) {
-								var con = $(".index-dl form select:nth-child(2) option:selected").val()
-								// console.log(data)
-
-								// console.log(data)
-								$.each(data[con], function(i, data1) {
-									// console.log(data)
-									// alert(data[con][i])
-
-									$(".index-dl form select:nth-child(3)").append("<option>" + data[con][i] + "</option>")
-
-
-
-									// $(".index-dl form select:nth-child(2)").append("<option>"+data+"</option>")
-								})
-							},
-							"error": function() {
-								console.log("读取失败")
-							}
-						})
-					})
-
-					//登陆人
-					var user = "陕西西安爱心";
-					$(".login-info em").append("欢迎进入" + user + "医院官方网站&nbsp;&nbsp;请");
-					//商品分类
-					//医疗资讯
-
-					// 					$.ajax({
-					// 						
-					// 							"url":"120.25.162.95:7010/topics/head",
-					// 							"type":"get",
-					// 							"async":false,
-					// 							// "datatype":"json",
-					// 							"success":function(data){
-					// 								console.log(data)
-					// 							},
-					// 							"error":function(){
-					// 								alert("参数错误");
-					// 							}
-					// 						
-					// 					})
-
-					$('.all-goods .item').hover(function() {
-						$(this).addClass('active').find('s').hide();
-						$(this).find('.product-wrap').show();
-					}, function() {
-						$(this).removeClass('active').find('s').show();
-						$(this).find('.product-wrap').hide();
-					});
-					$(".lha").click(function() {
-						$(this).removeClass("lha")
-						$(this).removeClass("lha2")
-					})
-				});
-				jQuery(".tabox").slide({
-					delayTime: 0
-				});
-
-			</script>
 
 	</body>
+	<script type="text/javascript">
+<!--动态添加首页图片-->
+		function pictureChange(){
+			$.get("./json/Picture.json",function(response,status){
+				if(response.code==200){
+					$.each(response.result, function(i,data){
+						// alert(i)
+						if(i<3){
+							$(".sideShow").append("<div style='z-index: 1; display: block;'><a href=''><img src="+data.Picture+"></a></div>")
+						}
+
+					})
+				}else{
+					alert(response.code)
+				}
+
+			},"json")
+		}
+
+		<!--				快速预约判断函数-->
+		function isChinaName(name) {
+			var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+			return pattern.test(name);
+		}
+
+		function isPhoneNo(phone) {
+			var pattern = /^1[34578]\d{9}$/;
+			return pattern.test(phone);
+		}
+
+		function isCardNo(card) {
+			
+			var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+			return pattern.test(card);
+		}
+		// 快速预约挂号
+		function ghCheck() {
+			// alert("123")
+			let a= $(".index-dl select:nth-child(1)").val();
+			let b = $(".index-dl select:nth-child(2)").val();
+			let c = $(".index-dl select:nth-child(3)").val();
+			let d = $(".index-dl input:nth-child(4)").val();
+			let e = $(".index-dl input:nth-child(5)").val();
+			let f = $(".index-dl input:nth-child(6)").val();
+
+			if (a == "请选择科室" || b == "请选择详细科室" || c == "请选择医生" || d == "" || e == "" || f == "") {
+
+				alert("请把信息填写完整")
+				return false
+			}
+			if (a != "请选择科室"&&b!="请选择详细科室" && c != "请选择医生" && d != "" && e != "" && f != "") {
+
+				if (isChinaName($.trim($($(".index-dl input:nth-child(4)")).val())) == false) {
+
+					$(".index-dl input:nth-child(4)").css("border", "1px solid red")
+					alert("× 名称不合法");
+					return false
+				} else {
+					$(".index-dl input:nth-child(4)").css("border", "")
+				}
+
+				if (isCardNo($.trim($($(".index-dl input:nth-child(5)")).val())) == false) {
+					$(".index-dl form input:nth-child(5)").css("border", "1px solid red");
+					alert("× 身份证号不正确");
+
+					return false;
+				} else {
+					$(".index-dl input:nth-child(5)").css("border", "")
+					// alert("身份证正确")
+				}
+
+				if (isPhoneNo($.trim($($(".index-dl input:nth-child(6)")).val())) == false) {
+
+					$(".index-dl input:nth-child(6)").css("border", "1px solid red")
+					alert("× 手机号码不正确");
+					return false
+				} else {
+					$(".index-dl input:nth-child(6)").css("border", "");
+					// alert("手机号正确")
+				}
+				// 						alert(a)
+				// 						alert(b)
+				// 						alert(c)
+				// 						alert(d)
+				// 						alert(e)
+				// 						$.session.set('name','tom');
+				// 						$.session.set('IDcard','12312414');
+				// 						$.session.set('phone','124312345');
+			}
+
+			$.session.set('office', a);
+			$.session.set('office_concrete', b);
+			$.session.set('docter', c);
+			$.session.set('name', d);
+			$.session.set('IDcard', e);
+			$.session.set('phone', f);
+			//把传入下一个页面参数写到session内存中
+		}
+		//搜索医生科室
+		function isSearchResource() {
+			// return  true;
+			// return true
+			//alert($(".top2-1 input").val());
+			var flag = false;
+			$.ajax({
+				"url": "/index/search",
+				"type": "post",
+				"async": false,
+				"data": {
+					"searchInfo": $(".top2-1 input").val(),
+				},
+				"success": function(data) {
+					flag = data.flag;
+				},
+				"error": function() {
+					alert("请重新搜索");
+				}
+			})
+			return flag
+		}
+
+
+		// 资讯
+		function medicalInf() {
+			// alert("ceshi")
+			$.get("./json/zixun.json", function(response, staus) {
+				// alert("ceshi")
+				// alert(response.code+""+response.msg)
+				if (response.code == 200 && response.msg == "success") {
+					$.each(response.result, function(i, data) {
+
+						if (data.typeArticle == 0) {
+
+							$.each(data.content, function(i, con) {
+								// 										$(".hotpnt").append("<p class='ylzx1-1'><span>热点关注</span> <a href=''>查看更多></a></p>")
+								// 										$(".hotpnt").append("<div class='ylzx1-2'><img src="+con.titlePic+" alt=''/></div>")
+								// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
+								if (i == 0) {
+									$(".hotpnt").append("<p class='ylzx1-1'><span>热点关注</span> <a href=''>查看更多></a></p>")
+									$(".hotpnt").append("<div class='ylzx1-2'><img src=" + con.titlePic + " alt=''/></div>")
+									// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+									$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
+									$(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle +
+											"...</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								} else if (con.flag == 0) {
+									$(".hotpnt .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/new.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 1) {
+									$(".hotpnt .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/hot.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 2) {
+									$(".hotpnt .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='' alt=''/><span>" + con.tmCreate + "</span></li>")
+								}
+
+								// $(".hotpnt").append("");
+
+							})
+						} else if (data.typeArticle == 1) {
+							// alert(data.typeArticle)
+							$.each(data.content, function(i, con) {
+								// 										$(".hlthcom").append("<p class='ylzx1-1'><span>健康常识</span> <a href=''>查看更多></a></p>")
+								// 										$(".hlthcom").append("<div class='ylzx1-2'><img src=" + con.titlePic+ " alt=''/></div>")
+								// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
+								if (i == 0) {
+									$(".hlthcom").append("<p class='ylzx1-1'><span>健康常识</span> <a href=''>查看更多></a></p>")
+									$(".hlthcom").append("<div class='ylzx1-2'><img src=" + con.titlePic + " alt=''/></div>")
+									// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+									$(".hlthcom").append("<div class='ylzx2'><ul></ul></div>")
+									$(".hlthcom .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle + "..." +
+											"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								} else if (con.flag == 0) {
+									$(".hlthcom .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/new.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 1) {
+									$(".hlthcom .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/hot.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 2) {
+									$(".hlthcom .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='' alt=''/><span>" + con.tmCreate + "</span></li>")
+								}
+
+								// $(".hotpnt").append("");
+
+							})
+
+
+
+						} else if (data.typeArticle == 2) {
+							$.each(data.content, function(i, con) {
+								// 										$(".hlthcare").append("<p class='ylzx1-1'><span>养生保健</span> <a href=''>查看更多></a></p>")
+								// 										$(".hlthcare").append("<div class='ylzx1-2'><img src=" + con.titlePic+ " alt=''/></div>")
+								// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
+								if (i == 0) {
+									$(".hlthcare").append("<p class='ylzx1-1'><span>养生保健</span> <a href=''>查看更多></a></p>")
+									$(".hlthcare").append("<div class='ylzx1-2'><img src=" + con.titlePic + " alt=''/></div>")
+									// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+									$(".hlthcare").append("<div class='ylzx2'><ul></ul></div>")
+									$(".hlthcare .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle + "..." +
+											"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								} else if (con.flag == 0) {
+									$(".hlthcare .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/new.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 1) {
+									$(".hlthcare .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/hot.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 2) {
+									$(".hlthcare .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='' alt=''/><span>" + con.tmCreate + "</span></li>")
+								}
+
+
+
+							})
+
+
+						} else if (data.typeArticle == 3) {
+							$.each(data.content, function(i, con) {
+								// 										$(".pychologhlth").append("<p class='ylzx1-1'><span>心理健康</span> <a href=''>查看更多></a></p>")
+								// 										$(".pychologhlth").append("<div class='ylzx1-2'><img src=" + con.titlePic+ " alt=''/></div>")
+								// 										// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								// 										$(".hotpnt").append("<div class='ylzx2'><ul></ul></div>")
+								if (i == 0) {
+									$(".pychologhlth").append("<p class='ylzx1-1'><span>心理健康</span> <a href=''>查看更多></a></p>")
+									$(".pychologhlth").append("<div class='ylzx1-2'><img src=" + con.titlePic + " alt=''/></div>")
+									// $(".hotpnt .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle+"..."+"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+									$(".pychologhlth").append("<div class='ylzx2'><ul></ul></div>")
+									$(".pychologhlth .ylzx1-2").append("<div class='ylzx1-3'><a href=''><h4>" + con.titleArticle + "..." +
+											"</h4><p>" + con.contentArticle.substring(0, 61) + "..<span>[详细]</span></p></a></div>")
+								} else if (con.flag == 0) {
+									$(".pychologhlth .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/new.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 1) {
+									$(".pychologhlth .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='./images/hot.png' alt=''/><span>" + con.tmCreate + "</span></li>")
+								} else if (con.flag == 2) {
+									$(".pychologhlth .ylzx2 ul").append("<li><a href=" + con.urlArticle + ">" + con.titleArticle +
+											"</a> <img src='' alt=''/><span>" + con.tmCreate + "</span></li>")
+								}
+
+
+
+							})
+
+
+						}
+					})
+				}
+			}, "json")
+		}
+
+
+
+		function docterInf(j, datalink,idFirstDep) {
+			
+			$.get(datalink,idFirstDep,function(response,status){
+					if (response.code==200) {
+						$.each(response.result, function(i, data1) {
+							// console.log(data.headPortrait);
+							if(i<7){
+
+								// console.log(data1.headPortrait);
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><img src=" + data1.headPortrait +
+										" alt=''/></p>")
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p>" + data1.nmDoctor + "</p>")
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><span>" + data1.nmSecondDep +
+										"</span> <span>" + data1.jobInfor + "</span></p>")
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><a href=''>评分" + data1.Score + ((
+										data1.followed==0) ?
+										("</a> <a class='lha2' href=''>已关注</a></p>") : ("</a> <a class='lha' href=''>关注+</a></p>")))
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<div class='lh1'>擅长：" + data1.fieldMain +
+										"</div>")
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<div class='lh2'></div>")
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ") .lh2").append((data1.vidiostate) ? (
+												"<div class='lh2-1 lh2-2'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>未开通</span></div>") :
+										("<div class='lh2-1'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>￥15</span></div>"))
+								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ") .lh2").append((data1.picstate) ? (
+										"<div class='lh2-1 lh2-2'><img src='images/sp-w.png' alt='视频'/> <h4>视频问诊</h4><span>未开通</span></div>"
+								) : ("<div class='lh2-1'><img src='images/sp1.png' alt=''/> <h4>视频问诊</h4><span>￥180</span></div>"))
+							}
+						})
+					}else{
+						alert(response.code)
+					}
+				
+				
+			},"json")
+
+// 			$.ajax({
+// 				"url": datalink,
+// 				"type": "get",
+// 				"datatype": "json",
+// 				"success": function(data) {
+// 					if (data.code==200) {
+// 						$.each(data.result, function(i, data1) {
+// 							// console.log(data.headPortrait);
+// 							if(i<7){
+// 
+// 								// console.log(data1.headPortrait);
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><img src=" + data1.headPortrait +
+// 										" alt=''/></p>")
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p>" + data1.nmDoctor + "</p>")
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><span>" + data1.nmSecondDep +
+// 										"</span> <span>" + data1.jobInfor + "</span></p>")
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<p><a href=''>评分" + data1.Score + ((
+// 										data1.followed==0) ?
+// 										("</a> <a class='lha2' href=''>已关注</a></p>") : ("</a> <a class='lha' href=''>关注+</a></p>")))
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<div class='lh1'>擅长：" + data1.fieldMain +
+// 										"</div>")
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ")").append("<div class='lh2'></div>")
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ") .lh2").append((data1.vidiostate) ? (
+// 												"<div class='lh2-1 lh2-2'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>未开通</span></div>") :
+// 										("<div class='lh2-1'><img src='images/tw1.png' alt=''/> <h4>图片问诊</h4><span>￥15</span></div>"))
+// 								$(".lh:nth-child(" + j + ") li:nth-child(" + (i + 1) + ") .lh2").append((data1.picstate) ? (
+// 										"<div class='lh2-1 lh2-2'><img src='images/sp-w.png' alt='视频'/> <h4>视频问诊</h4><span>未开通</span></div>"
+// 								) : ("<div class='lh2-1'><img src='images/sp1.png' alt=''/> <h4>视频问诊</h4><span>￥180</span></div>"))
+// 							}
+// 						})
+// 					}
+// 				},
+// 				"error": function() {
+// 
+// 				}
+// 			})
+		}
+		// 科室分类
+		function keshifenlei() {
+			$.get("./json/keshifenlei.json",function(response,status){
+				let tubiao ="tubiao"
+
+				// alert(response)
+				if(response.code==200){
+					$.each(response.result,function(i,data){
+						switch (data.nmFirstDep) {
+							case "内科":
+								tubiao="tubiao"
+								break;
+							case "外科":
+								tubiao="tubiao1"
+								break;
+							case "妇产科":
+								tubiao="tubiao2"
+								break;
+							case "儿科":
+								tubiao="tubiao3"
+								break;
+							case "骨科":
+								tubiao="tubiao4"
+								break;
+							case "眼科":
+								tubiao="tubiao5"
+								break;
+							case "耳鼻喉科":
+								tubiao="tubiao6"
+								break;
+							case "口腔科":
+								tubiao="tubiao7"
+								break;
+							default:
+								tubiao="tubiao8"
+								break;
+
+						}
+						// console.log(i)
+						$(".all-goods ").append("<div class='item btnone'></div>")
+						$(".all-goods .item:nth-child("+(i+1)+")").append("<div class='product "+tubiao+"'></div>")
+						$(".all-goods .item:nth-child("+(i+1)+")").append("<div class='product-wrap pos01'></div>")
+						$(".all-goods .item:nth-child("+(i+1)+") .product").append("<h3></h3>")
+						// console.log(data.nmFirstDep)
+						$(".all-goods .item:nth-child("+(i+1)+") .product h3").append("<a href='#'><i></i>"+data.nmFirstDep+"</a>")
+						// console.log($(".all-goods .item:nth-child("+(i+1)+") .product h3 a"))
+						$.each(data.content,function(j,data1){
+							$(".all-goods .item:nth-child("+(i+1)+") .product-wrap").append("<div class='index-nav'></div>")
+							// console.log(data1.nmSecondDep)
+							// console.log(i,j)
+							$(".all-goods .item:nth-child("+(i+1)+") .product-wrap .index-nav:nth-child("+(j+1)+")").append("<h3>"+data1.nmSecondDep+"常见疾病</h3>")
+							$(".all-goods .item:nth-child("+(i+1)+") .product-wrap .index-nav:nth-child("+(j+1)+")").append("<ul class='disease-cat'></ul>")
+							$.each(data1.commonDisease,function(k,data2){
+								// console.log(data2.nmDisease)
+								$(".all-goods .item:nth-child("+(i+1)+") .product-wrap .index-nav:nth-child("+(j+1)+") .disease-cat").append("<a href='#'>"+data2.nmDisease+"</a>")
+								if(k<1&&j<2){
+
+									$(".all-goods .item:nth-child("+(i+1)+") .product h3").append("<a href='#'>"+data2.nmDisease+"</a>")
+									// $(".all-goods .item:nth-child("+(i+1)+") .product h3").append("<p><p/>")
+								}
+
+							})
+						})
+
+
+					})
+
+				}else{
+					alert("请重新加载")
+				}
+
+			},"json")
+		}
+		//鼠标悬停
+		// function mouseoverEvent(){
+		//
+		// }
+		//鼠标移入
+		function mouseoverEvent(){
+			$("body").on('mouseover','.btnone',function(){
+				// alert("test")
+				$(this).addClass("active")
+				$(".active .product-wrap").css("display","block")
+			} );
+		}
+		//鼠标移出
+		function mouseoutEvent(){
+			$("body").on('mouseout','.btnone',function(){
+				// alert("test")
+				$(this).removeClass("active")
+				$(this).find(".product-wrap").css("display","none")
+			} );
+		}
+		function mouseEvent(){
+			mouseoverEvent();
+			mouseoutEvent();
+		}
+
+		//读取第一级科室加载页面时直接添加
+		function firstDepartmentResearch(){
+			$.get("./json/firstDepartment.json",function(response,status){
+				if(response.code==200){
+					$.each(response.result,function(i,data){
+						$(".index-dl form select:nth-child(1)").append("<option>" + data.nmFirstDep + "</option>")
+					})
+				}else{
+					alert(response.code)
+				}
+			},"json")
+		}
+		
+		// 第一级科室添加后触发二级科室
+		function secondDepartmentResearch(idFirstDep){
+			$.get("./json/secondDepartment.json",idFirstDep,function(response,staus){
+				if(response.code==200){
+					$.each(response.result,function(i,data){
+						$(".index-dl form select:nth-child(2)").append("<option>" + data.nmSecondDep + "</option>")
+					})
+					
+				}else{
+					alert(response.code);
+				}
+			},"json")
+		}
+				
+		function thirdDocterResearch(idSecondDep){
+			$.get("./json/docterNm.json",idSecondDep,function(response,staus){
+				if(response.code==200){
+					$.each(response.result,function(i,data){
+						$(".index-dl form select:nth-child(3)").append("<option>" + data.nmDoctor + "</option>")
+					})
+					
+				}else{
+					alert(response.code);
+				}
+			},"json")
+		}
+		// 第一个科室菜单栏选择后触发
+		function firstReaserchChange(){
+			$(".index-dl form select:nth-child(1)").change(function(){
+				secondDepartmentResearch("内科")
+			})
+		}
+		// 第二个科室菜单栏选择后触发
+		function secondReaserchChange(){
+			$(".index-dl form select:nth-child(2)").change(function(){
+				thirdDocterResearch("内科")
+			})
+		}
+		// 显示全部科室
+		function displayAllDepartment(){
+			var flag1 = true;
+			$(".tabox .hd p a").click(function() {
+			
+				if (flag1) {
+					$(".tabox .hd .hide").attr("class", "show");
+					$(".tabox .hd p a").text("<部分科室");
+					flag1 = !flag1;
+					// alert(flag1);
+				} else {
+			
+					$(".tabox .hd .show").attr("class", "hide");
+					$(".tabox .hd p a").text("全部科室>");
+					flag1 = !flag1;
+					// alert(flag1);
+				}
+			})
+		}
+		function welcom(flag){
+			let user = "陕西西安爱心";
+			if(!flag){
+				
+				$(".login-info em").append("欢迎进入" + user + "医院官方网站&nbsp;&nbsp;请");		
+				$(".login-info").append("<a href='login.html'>注册</a>");
+				$(".login-info").append("<a href='login.html'>登录</a>");
+			}else{
+				$(".login-info em").append("欢迎进入"+user+"医院官方网站&nbsp;&nbsp;");	
+			}
+
+		}
+		$(function() {
+			
+			//显示图片
+			pictureChange();
+
+
+			// 读取第一级科室加载页面时直接通过ajax载入
+			firstDepartmentResearch();
+			// 第一级菜单栏变化触发
+			firstReaserchChange()
+			// 
+			secondReaserchChange()
+			// ghCheck();
+			mouseEvent();
+
+			// 显示全部科室
+			displayAllDepartment()
+
+			keshifenlei();
+			medicalInf()
+
+
+			// 医生简介
+
+			docterInf(2, "./json/consulter-neike.json","idFirstDep");
+			docterInf(1, "./json/consulter-neike.json","idFirstDep");
+			docterInf(3, "./json/consulter-neike.json","idFirstDep");
+			docterInf(4, "./json/consulter-neike.json","idFirstDep");
+			docterInf(5, "./json/consulter-neike.json","idFirstDep");
+			docterInf(6, "./json/consulter-neike.json","idFirstDep");
+			docterInf(7, "./json/consulter-neike.json","idFirstDep");
+
+
+
+			//登陆人
+				welcom(true);
+			//商品分类
+			//医疗资讯
+
+			// 					$.ajax({
+			//
+			// 							"url":"120.25.162.95:7010/topics/head",
+			// 							"type":"get",
+			// 							"async":false,
+			// 							// "datatype":"json",
+			// 							"success":function(data){
+			// 								console.log(data)
+			// 							},
+			// 							"error":function(){
+			// 								alert("参数错误");
+			// 							}
+			//
+			// 					})
+
+			$('.all-goods .item').hover(function() {
+				$(this).addClass('active').find('s').hide();
+				$(this).find('.product-wrap').show();
+			}, function() {
+				$(this).removeClass('active').find('s').show();
+				$(this).find('.product-wrap').hide();
+			});
+			$(".lha").click(function() {
+				$(this).removeClass("lha")
+				$(this).removeClass("lha2")
+			})
+		});
+		jQuery(".tabox").slide({
+			delayTime: 0
+		});
+
+	</script>
 </html>

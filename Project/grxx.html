@@ -111,7 +111,7 @@
 						<div class="Setting-content">
 							<p class="first-line">
 								<span>用户名</span>
-								<em>zhangmei1093</em>
+								<em>zhangmei1093</em>>
 								<a class="btn-Modify" href="#">修改</a>
 							</p>
 							<p class="first-line">
@@ -250,26 +250,35 @@
 				}
 			},'json')
 		}
-		function test() {
-			var a = $(".headtips form .form-item:nth-child(1) select option:selected").text()
-			var b = $(".headtips form .form-item:nth-child(2) textarea").val()
-			var c = $(".headtips form .form-item:nth-child(3) input[type='post']").val()
-			var d = $(".headtips .form-item:nth-child(4) input[type='text']").val()
-			var e = $(".headtips .form-item:nth-child(5) input[type='number']").val()
-			var f = $(".headtips .form-checkbox input[type='checkbox']").get(0).checked
-			var g = $(".headtips .form-button button[type='submit']")
-			alert(a)
-			alert(b)
-			alert(c)
-			alert(d)
-			alert(e)
-			alert(f)
-			alert(g)
+		function shouhuodizhi() {
+			var addr = $(".headtips form .form-item:nth-child(1) select option:selected").text()
+			var addrC = $(".headtips form .form-item:nth-child(2) textarea").val()
+			var postalCode = $(".headtips form .form-item:nth-child(3) input[type='post']").val()
+			var name= $(".headtips .form-item:nth-child(4) input[type='text']").val()
+			var phoneNum = $(".headtips .form-item:nth-child(5) input[type='number']").val()
+			var flag = $(".headtips .form-checkbox input[type='checkbox']").get(0).checked
+			// var g = $(".headtips .form-button button[type='submit']")
+			let data= {
+				"address":addr,
+				"addrC" :addrC,
+				"postalCode":postalCode,
+				"name":name,
+				"phoneNum":phoneNum,
+				"flag":flag
+			}
+			$.post(url,data,function () {
+				alert("保存成功");
+
+			},"json")
+			// alert(a)
+			// alert(b)
+			// alert(c)
+			// alert(d)
+			// alert(e)
+			// alert(f)
+			// alert(g)
 		}
-		$(function() {
-			// 收货地址列表;页面开始ajax自动获取
-			deliveryList()
-			// 打开页面自动获取用户信息
+		function jibenxinxi(){
 			$.get("./json/essential_informaton.json", function(response, staus) {
 				// alert(response)
 				$(".name-info").append("<em>姓名：<span>" + response.NM_Patient + "</span></em>");
@@ -279,7 +288,7 @@
 				$(".name-info").after("<p>工作单位：<span>" + response.officeAddress + "</span></p>")
 				$(".name-info").after("<p>常住地址：<span>" + response.Addr_Patient + "</span></p>")
 				$.each(response.contacts, function(i, data) {
-					<!-- <tr class="tr-content"></tr> -->
+
 					// alert(i)
 					$(".relative-table").append("<tr class='tr-content'></tr>")
 					$(".relative-table .tr-content:nth-child(" + (i + 2) + ")").append("<td>" + data.contactName + "</td>")
@@ -291,6 +300,9 @@
 				})
 
 			}, "json")
+		}
+		//删除联系人信息
+		function shanchu(){
 			$('body').on('click', '.relative-table tr td span', function() {
 				// alert("123");
 				$(this).parent().parent().remove();
@@ -299,30 +311,45 @@
 					alert('删除成功')
 				}, 'json')
 			})
+		}
+		//加载联系人信息
+		function infoLoad(){
 			if (true) {
 				$.get('./json/presentation.json', function(response, status) {
 					// alert(response.presentImg)
-					$(".userContent .pers-tab .pers-name").append("<img src=" + response.Head_Portrait + " />")
-					$(".userContent .pers-tab .pers-name").append("<h3>" + response.NM_Nick + "</h3>")
+					if (response.code==200){
+						alert(response.code)
+						$.each(response.result,function(i,data){
+							// alert(i)
+							$(".userContent .pers-tab .pers-name").append("<img src=" + data.Head_Portrait + " />")
+							$(".userContent .pers-tab .pers-name").append("<h3>" + data.NM_Nick + "</h3>")
+						})
+					} else{
+						alert(response.code)
+					}
+
 				}, "json")
 
 			}
+		}
+		//表单信息提交
+		function listPost(){
 			$(".headtips .form-button button[type='submit']").click(function(){
-				test()
+				shouhuodizhi();
 			})
-// 			$(".headtips .form-checkbox input[type='checkbox']").click(function(){
-// 				alert("213")
-// 			})
-// 			$(".headtips form .form-item).change(function(){
-// 				alert("1")
-// 			})
-			// test()
-			// alert($(".relative-table .tr-content td").text());
-			// 删除操作
-			// 			$(".relative-table .tr-content td").click(function(){
-			// 				alert("sadf")
-			// 				// $(this).parent('td').parent('tr')
-			// 			})
+		}
+		$(function() {
+			// 收货地址列表;页面开始ajax自动获取
+			deliveryList()
+			// 打开页面自动获取用户信息
+			jibenxinxi()
+			//删除信息并提示
+			shanchu()
+			//信息加载
+			infoLoad()
+			//表单信息提交
+			listPost()
+
 		})
 	</script>
 </html>

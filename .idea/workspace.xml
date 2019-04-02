@@ -2,12 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f960c6ec-a76f-40fb-b878-62ffbf613d7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/备份2/备份/json/keshifenlei.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份/ylzx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/css/stylezixun.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/a1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/bank-gongshang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/bank-zhaoshang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/banner-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/bhk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/bhk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/bi-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/code-appQR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/code-wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/dh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/dl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/doc-info-tuwen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/doc-info-vedio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ek-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/fk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/fk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/gk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/gk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/gr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/hot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/icon-nav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/icon-person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/iconpic-alipay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/iconpic-tye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/iconpic-unionpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/iconpic-wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/logo-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/mb521.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/nk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/nk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/pay-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/pcqq66.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/qqhd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/qtk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/qtk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/sp-w.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/sp1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/star-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/touxiang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/tw-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/tw1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/winqq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/wk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/wk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/wxts-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/xb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/xw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/xw1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/yi1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/yi2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/yk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/yk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ylzx-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ylzx-pic1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ylzx-pic2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ylzx-pic3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ylzx-pic4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/ysxqtx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/yygh-closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/yyk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/images/yyk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/js/jquery.SuperSlide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/js/jquery.im.index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/js/jquery.im.ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/css/style3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/grxx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/banner-person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/doc-info-tuwen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/doc-info-vedio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/icon-tab-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/icon-tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/a1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/bank-gongshang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/bank-zhaoshang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/banner-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/bhk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/bhk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/bi-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/code-appQR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/code-wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/dh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/dl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/doc-info-tuwen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/doc-info-vedio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ek-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/fk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/fk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/gk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/gk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/gr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/hot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/icon-nav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/icon-person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/iconpic-alipay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/iconpic-tye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/iconpic-unionpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/iconpic-wechat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/logo-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/mb521.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/nk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/nk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/pay-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/pcqq66.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/qqhd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/qtk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/qtk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/sp-w.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/sp1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/star-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/touxiang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/tw-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/tw1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/winqq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/wk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/wk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/wxts-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/xb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/xw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/xw1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/yi1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/yi2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/yk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/yk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ylzx-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ylzx-pic1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ylzx-pic2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ylzx-pic3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ylzx-pic4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/ysxqtx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/yygh-closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/yyk-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/images/yyk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/pers-tx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/phone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/star-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/tw-m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/wx-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/xb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/ylzx-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/ylzx-pic1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/ylzx-pic2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/ylzx-pic3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/ylzx-pic4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/images/ysxqtx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/Picture.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/docterNm.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/essential_informaton.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/firstDepartment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/presentation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/secondDepartment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/ylzxpage.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/json/收货地址列表.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/备份2/备份/ylzx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/css/style3.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/style3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/grxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/grxx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/json/presentation.json" beforeDir="false" afterPath="$PROJECT_DIR$/Project/json/presentation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/yygh.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/yygh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/备份2.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份.zip" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/备份2/备份/json/consulter-neike.json" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份/json/consulter-neike.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份/json/keshifenlei.json" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份/json/keshifenlei.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份/json/office_docter.1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份/json/office_docter.2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份/json/office_docter.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/备份2/备份/json/zixun.json" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份/json/zixun.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份2/备份/yygh.html" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份/yygh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/备份2/备份/备份.html" beforeDir="false" afterPath="$PROJECT_DIR$/备份2/备份/备份.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/备份3/备份1/备份.html" beforeDir="false" afterPath="$PROJECT_DIR$/备份3/备份1/备份.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,84 +210,97 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/备份2/备份/备份.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="392" column="35" selection-start-line="392" selection-start-column="35" selection-end-line="392" selection-end-column="35" />
+            <state relative-caret-position="375">
+              <caret line="77" column="41" lean-forward="true" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
               <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/json/hlthcare.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/json/keshifenlei.json">
+        <entry file="file://$PROJECT_DIR$/备份2/备份/ylzx.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/json/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/json/tsconfig(1).json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/json/zixun.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/js/jquery.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1672">
-              <caret line="102" column="388" selection-start-line="102" selection-start-column="383" selection-end-line="102" selection-end-column="388" />
+            <state relative-caret-position="615">
+              <caret line="751" column="27" selection-start-line="751" selection-start-column="27" selection-end-line="751" selection-end-column="27" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#36054#36638#0" />
+                <element signature="e#36706#37042#0" />
+                <element signature="e#37081#37558#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/js/jquery.SuperSlide.js">
+        <entry file="file://$PROJECT_DIR$/备份2/备份/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/备份2/备份/json/presentation.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="190">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/备份2/备份/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/js/jquery_session.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Project/css/style3.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1558">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/备份2/备份/首页.1.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Project/grxx.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2242">
+              <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/备份2/备份/grxx.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="123" column="32" lean-forward="true" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/备份2/备份/css/style3.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1596">
+              <caret line="84" column="77" selection-start-line="84" selection-start-column="77" selection-end-line="84" selection-end-column="77" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -109,30 +309,42 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>医疗资讯</find>
-      <find>medicalInf</find>
-      <find>name</find>
-      <find>URL_ARTICA</find>
-      <find>second-department-name</find>
-      <find>docterInf</find>
-      <find>keshi</find>
-      <find>console.log(data1.Head_Portrait);</find>
-      <find>-</find>
-      <find>keshifenlei()</find>
-      <find>alert</find>
-      <find>h3</find>
-      <find>keshifenlei</find>
-      <find>append</find>
       <find>afer</find>
       <find>after</find>
       <find>科室分类</find>
       <find>console</find>
+      <find>all</find>
       <find>body</find>
+      <find>first_Department_Id</find>
+      <find>isSearchResource</find>
+      <find>if(i==0)</find>
+      <find>jquery</find>
+      <find>sideShow</find>
+      <find>safeSetting</find>
+      <find>news-items-left</find>
+      <find>news-list-content</find>
+      <find>/topics/123.html</find>
+      <find>images/ylzx-pic1.png</find>
+      <find>hot-notice</find>
+      <find>news-items-title</find>
+      <find>news-list-box</find>
+      <find>console.log</find>
+      <find>new-box-content</find>
+      <find>news-items-right</find>
+      <find>news-items-content</find>
+      <find>修改</find>
+      <find>em</find>
+      <find>texareaChange</find>
+      <find>alert(con)</find>
+      <find>alert</find>
+      <find>Setting-content</find>
+      <find>btn-Modify</find>
     </findStrings>
     <replaceStrings>
       <replace>NM_Doctor</replace>
@@ -140,7 +352,13 @@
       <replace>second_department_name</replace>
       <replace>URL_ARTICAL</replace>
       <replace>_</replace>
+      <replace>idFirstDep</replace>
+      <replace>isSearchResource</replace>
+      <replace>images/ylzx-pic1.png</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\liuha\Documents\HBuilderProjects\备份2</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
@@ -154,17 +372,31 @@
         <option value="$PROJECT_DIR$/备份2/备份/json/zixun.json" />
         <option value="$PROJECT_DIR$/备份2/备份/json/consulter-neike.json" />
         <option value="$PROJECT_DIR$/备份2/备份/json/package.json" />
-        <option value="$PROJECT_DIR$/备份2/备份/json/keshifenlei.json" />
         <option value="$PROJECT_DIR$/../WeChat Files/wxid_57bi739zbuqc21/FileStorage/File/2019-03/医院首页切图/index.html" />
+        <option value="$PROJECT_DIR$/备份2/备份/css/style.css" />
+        <option value="$PROJECT_DIR$/备份2/备份.html" />
+        <option value="$PROJECT_DIR$/备份2/备份/json/keshifenlei.json" />
+        <option value="$PROJECT_DIR$/备份2/备份/json/Picture.json" />
+        <option value="$PROJECT_DIR$/备份2/备份/yygh.html" />
+        <option value="$PROJECT_DIR$/Project/json/presentation.json" />
+        <option value="$PROJECT_DIR$/备份/ylzx.html" />
+        <option value="$PROJECT_DIR$/备份2/备份/ylzx.html" />
+        <option value="$PROJECT_DIR$/备份2/备份/json/ylzxpage.json" />
+        <option value="$PROJECT_DIR$/Project/grxx.html" />
+        <option value="$PROJECT_DIR$/备份2/备份/test.html" />
+        <option value="$PROJECT_DIR$/Project/css/style3.css" />
+        <option value="$PROJECT_DIR$/备份2/备份/json/presentation.json" />
+        <option value="$PROJECT_DIR$/备份2/备份/css/style3.css" />
+        <option value="$PROJECT_DIR$/备份2/备份/grxx.html" />
         <option value="$PROJECT_DIR$/备份2/备份/备份.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-167" />
-    <option name="y" value="17" />
-    <option name="width" value="1943" />
-    <option name="height" value="980" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-100" />
+    <option name="y" value="45" />
+    <option name="width" value="1530" />
+    <option name="height" value="915" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -172,6 +404,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,16 +427,28 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/备份2/备份/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\HBuilderProjects\备份2\备份" />
+      <recent name="C:\Users\liuha\Documents\HBuilderProjects\备份2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuha\Documents\HBuilderProjects\备份2\备份\images" />
+      <recent name="C:\Users\liuha\Documents\HBuilderProjects\备份" />
+      <recent name="C:\Users\liuha\Documents\HBuilderProjects\备份2\备份\json" />
+      <recent name="C:\Users\liuha\Documents\HBuilderProjects\备份2\备份" />
+      <recent name="C:\Users\liuha\Documents\HBuilderProjects\备份2\备份\css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,21 +477,31 @@
       <workItem from="1553751130737" duration="10748000" />
       <workItem from="1553768023316" duration="439000" />
       <workItem from="1553768519628" duration="173000" />
-      <workItem from="1553768717577" duration="2119000" />
+      <workItem from="1553768717577" duration="3054000" />
+      <workItem from="1553772665534" duration="1311000" />
+      <workItem from="1553837700638" duration="12260000" />
+      <workItem from="1553855057668" duration="2294000" />
+      <workItem from="1553909936579" duration="9691000" />
+      <workItem from="1553939158728" duration="71000" />
+      <workItem from="1553940138418" duration="32000" />
+      <workItem from="1553943735710" duration="5380000" />
+      <workItem from="1553992451183" duration="1230000" />
+      <workItem from="1553993708800" duration="10075000" />
+      <workItem from="1554007032605" duration="3883000" />
+      <workItem from="1554078310286" duration="9836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23429000" />
+    <option name="totallyTimeSpent" value="80427000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-133" y="14" width="1554" height="784" extended-state="1" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18642952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18692206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="SVN Repositories" weight="0.3297546" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -256,14 +511,15 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3297546" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3297546" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3294702" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.3297546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.207478" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18642952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -275,8 +531,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3294702" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3294702" />
+      <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.3297546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,38 +542,31 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Project/grxx.html</url>
+          <line>253</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/备份/备份.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4226" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/备份2/备份/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="359" column="18" lean-forward="true" selection-start-line="359" selection-start-column="18" selection-end-line="359" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/备份3/备份1/json/consulter-neike.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/备份.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="911" column="120" selection-start-line="911" selection-start-column="116" selection-end-line="911" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/备份2/备份/json/consulter-waike.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/备份/json/consulter-neike.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -378,43 +628,8 @@
     <entry file="file://$PROJECT_DIR$/备份2/备份/js/jquery.im.ui.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/备份2/备份/备份.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="392" column="35" selection-start-line="392" selection-start-column="35" selection-end-line="392" selection-end-column="35" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/备份2/备份/json/hlthcare.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/备份2/备份/json/keshifenlei.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/备份2/备份/json/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/备份2/备份/json/tsconfig(1).json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/备份2/备份/json/zixun.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/备份2/备份/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -438,8 +653,251 @@
     <entry file="file://$PROJECT_DIR$/备份2/备份/js/jquery_session.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/tsconfig(1).json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4161">
+          <caret line="219" column="50" selection-start-line="219" selection-start-column="50" selection-end-line="219" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/备份2/备份/首页.1.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/essential_informaton.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/firstDepartment.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/hotpnt.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/pychologhlth.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/layer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/yygh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="842" column="44" selection-start-line="842" selection-start-column="44" selection-end-line="842" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/收货地址列表.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/Picture.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/备份.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17309">
+          <caret line="911" column="120" selection-start-line="911" selection-start-column="116" selection-end-line="911" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/json/presentation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="30" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/keshifenlei.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/zixun.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/ylzxpage.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="e#4271#5207#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份/ylzx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="866" column="50" selection-start-line="866" selection-start-column="50" selection-end-line="866" selection-end-column="50" />
+          <folding>
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#p#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#5;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#6;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#7;n#ul#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#div#1;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#1;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/css/style3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1558">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/grxx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/css/style3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="84" column="77" selection-start-line="84" selection-start-column="77" selection-end-line="84" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/备份.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="842" column="17" selection-start-line="842" selection-start-column="17" selection-end-line="842" selection-end-column="17" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/ylzx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="751" column="27" selection-start-line="751" selection-start-column="27" selection-end-line="751" selection-end-column="27" />
+          <folding>
+            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#36054#36638#0" />
+            <element signature="e#36706#37042#0" />
+            <element signature="e#37081#37558#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/json/presentation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/备份2/备份/grxx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="131" column="66" selection-start-line="131" selection-start-column="66" selection-end-line="131" selection-end-column="66" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#html#0;n#!!top" />
+            <element signature="e#5530#5703#0" />
+            <element signature="e#6460#6810#0" />
+            <element signature="e#6859#6928#0" />
+            <element signature="e#6931#6939#0" />
+            <element signature="e#7502#7511#0" />
+            <element signature="e#7728#7737#0" />
+            <element signature="e#7774#7785#0" />
+            <element signature="e#8016#8093#0" />
+            <element signature="e#7503#7512#0" />
+            <element signature="e#8157#8166#0" />
+            <element signature="e#8241#8310#0" />
+            <element signature="e#7366#8658#0" />
+            <element signature="e#8686#9843#0" />
+            <element signature="e#9870#10751#0" />
+            <element signature="e#10775#12121#0" />
+            <element signature="e#12154#12381#0" />
+            <element signature="e#12415#12872#0" />
+            <element signature="e#12905#13007#0" />
+            <element signature="e#13023#13369#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

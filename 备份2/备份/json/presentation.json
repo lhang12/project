@@ -1,0 +1,15 @@
+{
+	"code": 200,
+	"msg": "success",
+	"result": [
+		{
+			"NM_Nick":"zhangmei1093",
+			"Head_Portrait":"images/pers-tx.png",
+			"userNum": "18255555556",
+			"userEmail": "2143193@qq.com",
+			"isBindNum": true,
+			"isBindEmial": true
+		}
+	]
+
+}

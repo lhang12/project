@@ -3,92 +3,92 @@
   "msg": "success",
   "result":[
     {
-      "ID_Doctor":1,
-      "NM_Doctor":"张黎",
-      "Head_Portrait":"images/touxiang.png",
-      "second_department_id":101,
-      "second_department_name":"心血管内科",
-      "Job_Infor":"主任医师",
+      "idDoctor":1,
+      "nmDoctor":"张黎",
+      "headPortrait":"images/touxiang.png",
+      "idSecondDep":101,
+      "nmSecondDep":"心血管内科",
+      "jobInfor":"主任医师",
       "Score":9.6,
       "followed":0,
-      "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+      "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
     },
 	  {
-		  "ID_Doctor":2,
-		  "NM_Doctor":"王五",
-		  "Head_Portrait":"images/touxiang.png",
-		  "second_department_id":102,
-		  "second_department_name":"心血管外科",
-		  "Job_Infor":"副主任医师",
+		  "idDoctor":2,
+		  "nmDoctor":"王五",
+		  "headPortrait":"images/touxiang.png",
+		  "idSecondDep":102,
+		  "nmSecondDep":"心血管外科",
+		  "jobInfor":"副主任医师",
 		  "Score":9.3,
 		  "followed":1,
-		  "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+		  "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
 	  },
 	  {
-		  "ID_Doctor":2,
-		  "NM_Doctor":"王五",
-		  "Head_Portrait":"images/touxiang.png",
-		  "second_department_id":102,
-		  "second_department_name":"心血管外科",
-		  "Job_Infor":"副主任医师",
+		  "idDoctor":2,
+		  "nmDoctor":"王五",
+		  "headPortrait":"images/touxiang.png",
+		  "idSecondDep":102,
+		  "nmSecondDep":"心血管外科",
+		  "jobInfor":"副主任医师",
 		  "Score":9.3,
 		  "followed":1,
-		  "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+		  "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
 	  },
 	  {
-		  "ID_Doctor":2,
-		  "NM_Doctor":"王五",
-		  "Head_Portrait":"images/touxiang.png",
-		  "second_department_id":102,
-		  "second_department_name":"心血管外科",
-		  "Job_Infor":"副主任医师",
+		  "idDoctor":2,
+		  "nmDoctor":"王五",
+		  "headPortrait":"images/touxiang.png",
+		  "idSecondDep":102,
+		  "nmSecondDep":"心血管外科",
+		  "jobInfor":"副主任医师",
 		  "Score":9.3,
 		  "followed":1,
-		  "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+		  "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
 	  },
 	  {
-		  "ID_Doctor":2,
-		  "NM_Doctor":"王五",
-		  "Head_Portrait":"images/touxiang.png",
-		  "second_department_id":102,
-		  "second_department_name":"心血管外科",
-		  "Job_Infor":"副主任医师",
+		  "idDoctor":2,
+		  "nmDoctor":"王五",
+		  "headPortrait":"images/touxiang.png",
+		  "idSecondDep":102,
+		  "nmSecondDep":"心血管外科",
+		  "jobInfor":"副主任医师",
 		  "Score":9.3,
 		  "followed":1,
-		  "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+		  "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
 	  },
 	  {
-		  "ID_Doctor":2,
-		  "NM_Doctor":"王五",
-		  "Head_Portrait":"images/touxiang.png",
-		  "second_department_id":102,
-		  "second_department_name":"心血管外科",
-		  "Job_Infor":"副主任医师",
+		  "idDoctor":2,
+		  "nmDoctor":"王五",
+		  "headPortrait":"images/touxiang.png",
+		  "idSecondDep":102,
+		  "nmSecondDep":"心血管外科",
+		  "jobInfor":"副主任医师",
 		  "Score":9.3,
 		  "followed":1,
-		  "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+		  "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
 	  },
 	  {
-		  "ID_Doctor":2,
-		  "NM_Doctor":"王五",
-		  "Head_Portrait":"images/touxiang.png",
-		  "second_department_id":102,
-		  "second_department_name":"心血管外科",
-		  "Job_Infor":"副主任医师",
+		  "idDoctor":2,
+		  "nmDoctor":"王五",
+		  "headPortrait":"images/touxiang.png",
+		  "idSecondDep":102,
+		  "nmSecondDep":"心血管外科",
+		  "jobInfor":"副主任医师",
 		  "Score":9.3,
 		  "followed":1,
-		  "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+		  "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
 	  },
 	  {
-		  "ID_Doctor":2,
-		  "NM_Doctor":"王五",
-		  "Head_Portrait":"images/touxiang.png",
-		  "second_department_id":102,
-		  "second_department_name":"心血管外科",
-		  "Job_Infor":"副主任医师",
+		  "idDoctor":2,
+		  "nmDoctor":"王五",
+		  "headPortrait":"images/touxiang.png",
+		  "idSecondDep":102,
+		  "nmSecondDep":"心血管外科",
+		  "jobInfor":"副主任医师",
 		  "Score":9.3,
 		  "followed":1,
-		  "Field_Main":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
+		  "fieldMain":"各种常见斜视手的微验配；各种复杂遗传性眼底病"
 	  }
   ]
 }

@@ -1,4 +1,11 @@
 {
-	"NM_Nick":"zhangmei1093",
-	"Head_Portrait":"images/pers-tx.png"
+	"code": 200,
+	"msg": "success",
+	"result": [
+		{
+			"NM_Nick":"zhangmei1093",
+			"Head_Portrait":"images/pers-tx.png"
+		}
+	]
+
 }

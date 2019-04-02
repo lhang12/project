@@ -673,7 +673,7 @@
 	            				</label>
 	            				<span class="radio-input">
 	            					<input type="radio" name="judge" id="" value=""/><label class="radio-label">去过</label>
-	            					<input type="radio" name="judge" id="" value=""/><label class="radio-label" >没有去过</label>
+	            					<input type="radio" name="judge" id="nevergone" value=""/><label class="radio-label" >没有去过</label>
 	            				</span>           				
 	            			</div>
 	            			<div class="items">
@@ -742,12 +742,40 @@
 					<p>版权所有：陕西西安爱心科技有限公司    陕B2-20130007   (陕)-经营性-2014-0022   陕ICP备12034511号-2</p>				
 				</div>												
 			</div>
+				    <div class="yygh-tck">
+			   	<div class="tck">
+			   		<div class="tck-titie">
+			   			<span>提示</span>
+			   			<a href="#">
+			   				<img src="images/yygh-closed.png"/>
+			   			</a>	   			
+			   		</div>
+			   		<div class="tck-content">
+			   			<p>为了避免延误病情，第一次就诊请您去线下医院实地和医生面对面进行交流。后期复诊您可以挂线上问诊，为了您的健康，请您理解 ，谢谢！！！</p>
+			   			<a >
+			   				<span>确认</span>
+			   			</a>
+			   		</div>	   		
+			   	</div>	   	
+			</div>
 	   <!--底部-结束--> 	   
 		</div>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 	    <script type="text/javascript" src="js/jquery.im.ui.min.js"></script>
 	    <script type="text/javascript" src="js/jquery.im.index.js"></script>
 	    <script type="text/javascript">
+			// 从来没来过来过弹框产生和消失
+			function isTipsConfirm(){
+				$(".tck-content a").click(function(){
+					$(".yygh-tck").css("display","none");
+				})
+			}
+			function nevergoneTips(){
+				$("#nevergone").click(function(){
+					// alert("hah")
+					$(".yygh-tck").css("display","block");
+				})
+			}
 			function isChinaName(name) {
 				var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
 				return pattern.test(name);
@@ -763,6 +791,9 @@
 				return pattern.test(card);
 			}
 	        $(function(){
+				// 从来没来过来过弹框产生和消失
+				isTipsConfirm()
+				nevergoneTips()
 				// 预约挂号
 // 				function ghCheck() {
 // 					var a = $(".items input:nth-child(1)").val();

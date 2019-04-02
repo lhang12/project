@@ -1,0 +1,15 @@
+{
+  "code": 200,
+  "msg": "success",
+  "result": [
+    {
+      "Picture": "images/banner-1.png"
+    },
+    {
+      "Picture": "images/login-bg.png"
+    },
+    {
+      "Picture": "images/login-bg.png"
+    }
+  ]
+}

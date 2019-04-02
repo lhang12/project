@@ -1,0 +1,34 @@
+{
+  "code": 200,
+  "msg": "ok",
+  "result": [
+    {
+      "idSecondDep":1,
+      "nmSecondDep":"内科"
+    },
+    {
+      "idSecondDep":2,
+      "nmSecondDep":"外1科"
+    },
+	{
+	  "idSecondDep":2,
+	  "nmSecondDep":"外2科"
+	},
+	{
+	  "idSecondDep":2,
+	  "nmSecondDep":"外3科"
+	},
+	{
+	  "idSecondDep":2,
+	  "nmSecondDep":"外4科"
+	},
+	{
+	  "idSecondDep":2,
+	  "nmSecondDep":"外5科"
+	},
+	{
+	  "idSecondDep":2,
+	  "nmSecondDep":"外6科"
+	}
+  ]
+}
